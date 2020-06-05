@@ -1,0 +1,25 @@
+fields:
+    name:
+        label: Name
+        span: left
+        required: true
+    email:
+        label: Email
+        span: right
+        required: true
+    title:
+        label: Title
+        required: true
+    content:
+        label: Content
+        size: ''
+        type: richeditor
+        required: true
+    featured_image:
+        label: Featured Image
+        type: fileupload
+        mode: image
+        imageWidth: '100'
+    is_active:
+        label: Active
+        type: switch

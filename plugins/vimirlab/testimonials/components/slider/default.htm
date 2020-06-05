@@ -1,0 +1,38 @@
+{% set testimonials = __SELF__.testimonials %}	
+{% set viewAll = __SELF__.viewAll %}
+<div class="testimonial-back">
+	<div class="container">
+		<div class="row">
+			<div class="owl-carousel owl-theme testimonials-slider owl-loaded owl-drag">
+				{% for testimonial in testimonials %}
+					<div class="item">
+						<figure class="testimonials-main">	
+							{% if testimonial.featured_image is not empty %}
+							<div class="col-md-3">
+								<div class="testimonial-img box" style="">
+									<img src="{{ testimonial.featured_image.path }}" class="img-responsive" alt="testimonial-img">
+								</div>								
+							</div>				
+							{% endif %}
+							<div class="col-md-9">
+								<div class="testimonials-text box" style="">								
+								
+									<h4 class="name">{{ testimonial.name }}</h4>
+									<h5 class="title">{{ testimonial.title }}</h5>
+									<div class="content">{{ testimonial.content|raw }}</div>
+								</div>
+							</div>
+						</figure>			
+					</div>
+				{% endfor %}
+			</div>
+		</div>					
+	
+		{% if viewAll != '' %}
+		<div class="testimonials-btn">
+			<a href="{{ viewAll }}" class="services-btn">View All</a>
+		</div>				
+		{% endif %}	
+		
+	</div>
+</div>

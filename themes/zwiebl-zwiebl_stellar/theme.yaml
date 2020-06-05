@@ -1,0 +1,8 @@
+name: 'Stellar'
+description: 'Stellar Theme from HTML5UP'
+author: 'Patrick Mitterer'
+homepage: 'https://zwiebl.xyz'
+code: zwiebl_stellar
+form: fields.yaml
+require:
+    - RainLab.Blog

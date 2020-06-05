@@ -1,0 +1,20 @@
+description = "Other Pages"
+==
+<html>
+<head>
+    {% partial "html_base/meta_head" %}
+</head>
+<body>
+    <div id="wrapper">
+        {% partial "all_pages/header" %}
+        {% partial "all_pages/navigation" %}
+        <div id="main">
+            <section id="content" class="main">
+                {% page %}
+            </section>
+        </div>
+        {% partial "all_pages/footer" %}
+    </div>
+    {% partial "html_base/scripts" %}
+</body>
+</html>

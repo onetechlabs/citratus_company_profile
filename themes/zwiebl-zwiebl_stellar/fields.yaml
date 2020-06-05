@@ -1,0 +1,152 @@
+tabs:
+  fields:
+
+    ####################################################
+    # Tab: Info
+    ####################################################
+
+    website_name:
+      tab: Info
+      label: Website Name
+      type: text
+      default: HTML5UP Stellar
+
+    website_author:
+      tab: Info
+      label: Author
+      type: text
+      default: Zwiebl.xyz
+
+    website_url:
+      tab: Info
+      label: URL
+      type: text
+      default: "http://demo.zwiebl.xyz/html5up_stellar"
+
+    description:
+      tab: Info
+      label: Description
+      type: textarea
+      default: "Modern and Clean One Page OctoberCMS Theme"
+
+    keywords:
+      tab: Info
+      label: Keywords
+      type: taglist
+      separator: comma
+      default: october,octobercms,themes,templates,free octobercms themes
+      options:
+        - october
+        - octobercms
+        - themes
+        - templates
+        - free octobercms themes
+
+    ####################################################
+    # Tab: Assets
+    ####################################################
+
+    load_google_fonts:
+      tab: Assets
+      label: Google Fonts
+      type: switch
+      default: true
+
+    google_font_family:
+      tab: Assets
+      label: Google Font Family
+      type: text
+      comment: Separate each font with vertical slash |
+      default: "Roboto+Slab:300,400,700|Raleway:300,300i,400,400i,700,700i"
+      trigger:
+        action: show
+        field: load_google_fonts
+        condition: checked
+
+    load_fontawesome:
+      tab: Assets
+      label: FontAwesome Icons Font
+      type: switch
+      default: true
+
+    load_jQuery:
+      tab: Assets
+      label: jQuery
+      type: switch
+      default: true
+
+    jQuery_version:
+      tab: Assets
+      label: jQuery Version
+      type: dropdown
+      default: 2.2.4
+      options:
+        3.1.0: 3.1.0
+        2.2.4: 2.2.4
+        1.12.4: 1.12.4
+      trigger:
+        action: show
+        field: load_jQuery
+        condition: checked
+
+    load_octobercms_framework:
+      tab: Assets
+      label: OctoberCMS Front-end Javascript Framework
+      type: switch
+      default: false
+
+    ####################################################
+    # Tab: Home Sections
+    ####################################################
+
+    show_section_one:
+      tab: Sections
+      label: Show first Section
+      type: switch
+      default: true
+
+    show_section_two:
+      tab: Sections
+      label: Show second Section
+      type: switch
+      default: true
+
+    show_section_three:
+      tab: Sections
+      label: Show third Section
+      type: switch
+      default: true
+
+    show_section_four:
+      tab: Sections
+      label: Show fourth Section
+      type: switch
+      default: true
+
+    ####################################################
+    # Tab: Colors
+    ####################################################
+
+    zw-bg-color-bg-one:
+      tab: Colors
+      label: Main BG Color From Top
+      type: colorpicker
+      availableColors: ["#a89cc8","#7fd2cc", "#c1a748","#79b0e8","#d8d27a", "#e39839", "#000000","#ffffff"]
+      default: "#a89cc8"
+      assetVar: "zw-bg-color-bg-one"
+
+    zw-bg-color-bg-two:
+      tab: Colors
+      label: Main BG Color To Bottom
+      type: colorpicker
+      availableColors: ["#5f4d93","#728c44","#c1a748","#79b0e8","#d8d27a", "#e39839", "#000000","#ffffff"]
+      default: "#5f4d93"
+      assetVar: "zw-bg-color-bg-two"
+
+    zw-bg-color-buttons:
+      tab: Colors
+      label: Buttons (class="button special")
+      type: colorpicker
+      availableColors: ["#8cc9f0", "#7fd2cc", "#c1a748","#79b0e8","#d8d27a", "#e39839", "#000000","#ffffff"]
+      default: "8cc9f0"
+      assetVar: "zw-button-bg"

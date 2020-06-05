@@ -1,0 +1,98 @@
+1591175888a:1:{s:27:"home_page/section_three.htm";a:6:{s:8:"fileName";s:27:"home_page/section_three.htm";s:7:"content";s:1715:"==
+<?php
+use Cms\Classes\Theme;
+  function onStart()
+  {
+        $imageitems     = [ ];
+        $filesImage     = File::allFiles( 'storage/app/media/konten_citratus/citratus_images/' );
+        foreach ($filesImage as $item) {
+            $imageitems[] = $item->getFilename();
+        }
+        rsort($imageitems, SORT_NUMERIC); // Bigest file number first
+        $this['gallery'] = $imageitems;
+        //dd( $imageitems );
+        
+        $videoitems     = [ ];
+        $filesVideo    = File::allFiles( 'storage/app/media/konten_citratus/citratus_videos/' );
+        foreach ($filesVideo as $item) {
+            $videoitems[] = $item->getFilename();
+        }
+        rsort($videoitems, SORT_NUMERIC); // Bigest file number first
+        $this['gallery_videos'] = $videoitems;
+        //dd( $videoitems );
+  }
+?>
+==
+<!-- Third Section -->
+<section id="three" class="main">
+    <header class="major">
+        <h2>Galeri Kami</h2>
+    </header>
+    <div class="flex-container">
+    <div class="flexslider">
+        <ul class="slides">
+            {% for item in gallery %}
+                <li>
+                    <img src="storage/app/media/konten_citratus/citratus_images/{{item}}"/>
+                </li>
+            {% else %}
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+    <div style="margin-top:20px; text-align: center;">
+    {% for item in gallery_videos %}
+        <video style="height: 300px; margin:10px;" autobuffer controls>
+          <source id="mp4" src="storage/app/media/konten_citratus/citratus_videos/{{item}}" type="video/mp4">
+        </video>
+    {% else %}
+        <h2>No Videos</h2>
+    {% endfor %}
+    <div>
+</section>";s:5:"mtime";i:1591166124;s:6:"markup";s:870:"<!-- Third Section -->
+<section id="three" class="main">
+    <header class="major">
+        <h2>Galeri Kami</h2>
+    </header>
+    <div class="flex-container">
+    <div class="flexslider">
+        <ul class="slides">
+            {% for item in gallery %}
+                <li>
+                    <img src="storage/app/media/konten_citratus/citratus_images/{{item}}"/>
+                </li>
+            {% else %}
+            {% endfor %}
+        </ul>
+    </div>
+    </div>
+    <div style="margin-top:20px; text-align: center;">
+    {% for item in gallery_videos %}
+        <video style="height: 300px; margin:10px;" autobuffer controls>
+          <source id="mp4" src="storage/app/media/konten_citratus/citratus_videos/{{item}}" type="video/mp4">
+        </video>
+    {% else %}
+        <h2>No Videos</h2>
+    {% endfor %}
+    <div>
+</section>";s:4:"code";s:824:"use Cms\Classes\Theme;
+  function onStart()
+  {
+        $imageitems     = [ ];
+        $filesImage     = File::allFiles( 'storage/app/media/konten_citratus/citratus_images/' );
+        foreach ($filesImage as $item) {
+            $imageitems[] = $item->getFilename();
+        }
+        rsort($imageitems, SORT_NUMERIC); // Bigest file number first
+        $this['gallery'] = $imageitems;
+        //dd( $imageitems );
+        
+        $videoitems     = [ ];
+        $filesVideo    = File::allFiles( 'storage/app/media/konten_citratus/citratus_videos/' );
+        foreach ($filesVideo as $item) {
+            $videoitems[] = $item->getFilename();
+        }
+        rsort($videoitems, SORT_NUMERIC); // Bigest file number first
+        $this['gallery_videos'] = $videoitems;
+        //dd( $videoitems );
+  }";s:17:"_PARSER_ERROR_INI";s:0:"";}}

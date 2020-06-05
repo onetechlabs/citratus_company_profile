@@ -1,0 +1,17 @@
+name: Testimonial
+
+form: $/vimirlab/testimonials/models/testimonial/fields.yaml
+
+modelClass: VimirLab\Testimonials\Models\Testimonial
+
+defaultRedirect: vimirlab/testimonials/testimonials
+
+create:
+    title: Create Testimonial
+    redirect: vimirlab/testimonials/testimonials/update/:id
+    redirectClose: vimirlab/testimonials/testimonials
+
+update:
+    title: Edit Testimonial
+    redirect: vimirlab/testimonials/testimonials
+    redirectClose: vimirlab/testimonials/testimonials

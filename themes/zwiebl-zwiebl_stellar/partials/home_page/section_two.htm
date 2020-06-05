@@ -1,0 +1,30 @@
+[slider testimoni]
+listPage = "{{ # }}"
+==
+{% set testi = testimoni %}
+<section id="two" class="main">
+    <header class="major">
+        <h2>Apa yang dikatakan pelanggan kami ?</h2>
+    </header>
+    <div id="testimonials" class="container">
+        <ul id="testi_slider">
+            {% for posttesti in testi.testimonials %}
+                {% if posttesti.is_active==1 %}
+                    {% if loop.index==1 %}
+                        <li class='active firstItem'>
+                            <div class="testmo" >{{html_strip(posttesti.content)}}</div>
+                            <div class="told_by">{{posttesti.name}}, {{posttesti.title}}</div>
+                        </li> 
+                    {% else %}
+                        <li>
+                            <div class="testmo" >{{html_strip(posttesti.content)}}</div>
+                            <div class="told_by">{{posttesti.name}}, {{posttesti.title}}</div>
+                        </li> 
+                    {% endif %}
+                {% endif %}
+            {% else %}
+                <h2>No Testimonies</h2>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

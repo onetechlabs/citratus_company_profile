@@ -1,0 +1,22 @@
+list: $/vimirlab/testimonials/models/testimonial/columns.yaml
+
+modelClass: VimirLab\Testimonials\Models\Testimonial
+
+title: Manage Testimonials
+
+recordUrl: vimirlab/testimonials/testimonials/update/:id
+
+noRecordsMessage: backend::lang.list.no_records
+
+recordsPerPage: 20
+
+showSetup: true
+
+showSorting: true
+
+showCheckboxes: true
+
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: backend::lang.list.search_prompt

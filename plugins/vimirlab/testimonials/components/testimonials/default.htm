@@ -1,0 +1,10 @@
+{% set testimonials = __SELF__.testimonials %}	
+{% set viewAll = __SELF__.viewAll %}
+	<div class="testimonials">
+		{% for testimonial in testimonials %}
+			<img src="{{ testimonial.featured_image.path }}" height="100" width="100">			
+			<h4>{{ testimonial.name }}</h4>
+			<h3>{{ testimonial.title }}</h3>
+			<p>{{ testimonial.content|raw }}</p>
+		{% endfor %}
+	</div>

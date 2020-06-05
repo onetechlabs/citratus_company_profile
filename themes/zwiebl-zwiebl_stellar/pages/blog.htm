@@ -1,0 +1,58 @@
+title = "Blog"
+url = "/blog/:page?/"
+layout = "generic"
+description = "Lorem Ipsum Blog"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = "{{ 4 }}"
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog-category"
+postPage = "blog-post"
+==
+{% set posts = blogPosts.posts %}
+
+<div class="post-list">
+    {% for post in posts %}
+            <h2>{{ post.title }}</h2>
+
+            <p class="info">
+                Posted
+                {% if post.categories.count %} in {% endif %}
+                {% for category in post.categories %}
+                    <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+                on {{ post.published_at|date('M d, Y') }}
+            </p>
+            <p class="excerpt">{{ post.summary }}</p>
+            <ul class="actions">
+                <li><a href="{{ post.url }}" class="button">Read more...</a></li>
+            </ul>
+            {% if not loop.last %}
+                <hr>
+            {% endif %}
+
+    {% else %}
+        <h2>{{ noPostsMessage }}</h2>
+    {% endfor %}
+</div>
+
+{% if posts.lastPage > 1 %}
+    <ul class="pagination">
+        {% if posts.currentPage > 1 %}
+            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+        {% endif %}
+
+        {% for page in 1..posts.lastPage %}
+            <li class="{{ posts.currentPage == page ? 'active' : null }}">
+                <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+            </li>
+        {% endfor %}
+
+        {% if posts.lastPage > posts.currentPage %}
+            <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+        {% endif %}
+    </ul>
+{% endif %}

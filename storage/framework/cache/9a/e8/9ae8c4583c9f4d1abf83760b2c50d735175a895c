@@ -1,0 +1,92 @@
+1591174973a:1:{s:13:"blog-post.htm";a:10:{s:8:"fileName";s:13:"blog-post.htm";s:7:"content";s:1278:"title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "generic"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog-category"
+==
+<?php
+function onEnd()
+{
+    // Optional - set the page title to the post title
+    if (isset($this->post))
+    $this->page->title = $this->post->title;
+    $this->page->description = str_limit($this->post->summary, 60, "...");
+}
+?>
+==
+{% if post %}
+<h2>{{ post.title }}</h2>
+
+{% set post = blogPost.post %}
+
+<div class="content">{{ post.content_html|raw }}</div>
+
+{% if post.featured_images.count %}
+    <div class="featured-images text-center">
+        {% for image in post.featured_images %}
+            <p>
+                <img
+                    data-src="{{ image.filename }}"
+                    src="{{ image.path }}"
+                    alt="{{ image.description }}"
+                    style="max-width: 100%" />
+            </p>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<p class="info">
+    Posted
+    {% if post.categories.count %} in
+        {% for category in post.categories %}
+            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    {% endif %}
+    on {{ post.published_at|date('M d, Y') }}
+</p>
+
+{% else %}
+<h2>Post not found</h2>
+{% endif %}";s:5:"mtime";i:1591115484;s:6:"markup";s:897:"{% if post %}
+<h2>{{ post.title }}</h2>
+
+{% set post = blogPost.post %}
+
+<div class="content">{{ post.content_html|raw }}</div>
+
+{% if post.featured_images.count %}
+    <div class="featured-images text-center">
+        {% for image in post.featured_images %}
+            <p>
+                <img
+                    data-src="{{ image.filename }}"
+                    src="{{ image.path }}"
+                    alt="{{ image.description }}"
+                    style="max-width: 100%" />
+            </p>
+        {% endfor %}
+    </div>
+{% endif %}
+
+<p class="info">
+    Posted
+    {% if post.categories.count %} in
+        {% for category in post.categories %}
+            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+    {% endif %}
+    on {{ post.published_at|date('M d, Y') }}
+</p>
+
+{% else %}
+<h2>Post not found</h2>
+{% endif %}";s:4:"code";s:223:"function onEnd()
+{
+    // Optional - set the page title to the post title
+    if (isset($this->post))
+    $this->page->title = $this->post->title;
+    $this->page->description = str_limit($this->post->summary, 60, "...");
+}";s:5:"title";s:9:"Blog Post";s:3:"url";s:16:"/blog/post/:slug";s:6:"layout";s:7:"generic";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:13:"blog-category";}}}

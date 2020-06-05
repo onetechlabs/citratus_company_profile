@@ -1,0 +1,34 @@
+description = "Stellar OnePage with Smooth Scroll"
+==
+<html>
+<head>
+    {% partial "html_base/meta_head" %}
+</head>
+<body>
+    <div id="wrapper">
+        {% partial "all_pages/header" %}
+        {% partial "home_page/navigation" %}
+        <div id="main">
+            {% page %}
+
+            {% if this.theme.show_section_one %}
+                {% partial "home_page/section_one" %}
+            {% endif %}
+
+            {% if this.theme.show_section_two %}
+                {% partial "home_page/section_two" %}
+            {% endif %}
+
+            {% if this.theme.show_section_three %}
+                {% partial "home_page/section_three" %}
+            {% endif %}
+
+            {% if this.theme.show_section_four %}
+                {% partial "home_page/section_four" %}
+            {% endif %}
+        </div>
+        {% partial "all_pages/footer" %}
+    </div>
+    {% partial "html_base/scripts" %}
+</body>
+</html>
