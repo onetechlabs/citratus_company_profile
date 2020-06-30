@@ -1,0 +1,28 @@
+1593533381a:1:{s:25:"home_page/section_one.htm";a:6:{s:8:"fileName";s:25:"home_page/section_one.htm";s:7:"content";s:852:"==
+<section id="one" class="main">
+    <div class="spotlight">
+        <div class="content">
+            <header class="major">
+                <h2>Apa itu Citratus ?</h2>
+            </header>
+            <p>Citratus adalah disinfektan bakar dibuat dari bahan-bahan alami beraroma serai menyegarkan yang dari ratusan tahun lalu sudah digunakan oleh para leluhur sebagai warisan adiluhung dapat membantu mencegah berkembangnya virus dan bakteri serta nyamuk dan serangga pada ruangan anda. serta memberikan efek segar alami yang menenangkan .</p>
+            <ul class="actions">
+                <li><a href="{{'apa-itu-citratus'|page}}" class="button">Pelajari lebih lanjut</a></li>
+            </ul>
+        </div>
+        <span class="image"><img src="{{ url('/storage/app/media/1.jpeg') }}" alt="image" /></span>
+    </div>
+</section>";s:5:"mtime";i:1593524276;s:6:"markup";s:848:"<section id="one" class="main">
+    <div class="spotlight">
+        <div class="content">
+            <header class="major">
+                <h2>Apa itu Citratus ?</h2>
+            </header>
+            <p>Citratus adalah disinfektan bakar dibuat dari bahan-bahan alami beraroma serai menyegarkan yang dari ratusan tahun lalu sudah digunakan oleh para leluhur sebagai warisan adiluhung dapat membantu mencegah berkembangnya virus dan bakteri serta nyamuk dan serangga pada ruangan anda. serta memberikan efek segar alami yang menenangkan .</p>
+            <ul class="actions">
+                <li><a href="{{'apa-itu-citratus'|page}}" class="button">Pelajari lebih lanjut</a></li>
+            </ul>
+        </div>
+        <span class="image"><img src="{{ url('/storage/app/media/1.jpeg') }}" alt="image" /></span>
+    </div>
+</section>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

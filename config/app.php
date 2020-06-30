@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://citratus.onetechlabsindonesia.xyz/',
+    'url' => 'http://localhost:8000/',
 
     /*
     |--------------------------------------------------------------------------

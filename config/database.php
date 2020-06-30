@@ -57,7 +57,7 @@ return [
             'engine'     => 'InnoDB',
             'host'       => 'localhost',
             'port'       => 3306,
-            'database'   => 'wilhels_compro',
+            'database'   => 'onetech2_wilhels_citratus',
             'username'   => 'root',
             'password'   => '',
             'charset'    => 'utf8mb4',

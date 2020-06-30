@@ -1,0 +1,10 @@
+1593533264a:1:{s:20:"all_pages/header.htm";a:6:{s:8:"fileName";s:20:"all_pages/header.htm";s:7:"content";s:189:"==
+<!-- Header -->
+<header id="header" style="padding: 3em 5em 0em 5em !important;" class="alt">
+    <h1>{{ this.page.title }}</h1>
+    <p>{{ this.page.description|raw }}</p>
+</header>";s:5:"mtime";i:1593524276;s:6:"markup";s:185:"<!-- Header -->
+<header id="header" style="padding: 3em 5em 0em 5em !important;" class="alt">
+    <h1>{{ this.page.title }}</h1>
+    <p>{{ this.page.description|raw }}</p>
+</header>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

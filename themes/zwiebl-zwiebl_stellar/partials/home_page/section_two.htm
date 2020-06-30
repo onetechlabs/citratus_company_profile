@@ -5,6 +5,7 @@ listPage = "{{ # }}"
 <section id="two" class="main">
     <header class="major">
         <h2>Apa yang dikatakan pelanggan kami ?</h2>
+        <p><input type="submit" value="Stop Testimonies" onclick="stopSlider(this)"/></p>
     </header>
     <div id="testimonials" class="container">
         <ul id="testi_slider">
@@ -12,12 +13,12 @@ listPage = "{{ # }}"
                 {% if posttesti.is_active==1 %}
                     {% if loop.index==1 %}
                         <li class='active firstItem'>
-                            <div class="testmo" >{{html_strip(posttesti.content)}}</div>
+                            <div class="testmo" >{{posttesti.content|raw}}</div>
                             <div class="told_by">{{posttesti.name}}, {{posttesti.title}}</div>
                         </li> 
                     {% else %}
                         <li>
-                            <div class="testmo" >{{html_strip(posttesti.content)}}</div>
+                            <div class="testmo" >{{posttesti.content|raw}}</div>
                             <div class="told_by">{{posttesti.name}}, {{posttesti.title}}</div>
                         </li> 
                     {% endif %}
