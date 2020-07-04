@@ -1,4 +1,4 @@
-1593533381a:1:{s:24:"home_page/navigation.htm";a:6:{s:8:"fileName";s:24:"home_page/navigation.htm";s:7:"content";s:244:"==
+1593837005a:1:{s:24:"home_page/navigation.htm";a:6:{s:8:"fileName";s:24:"home_page/navigation.htm";s:7:"content";s:299:"==
 <!-- Nav -->
 <nav id="nav">
     <ul>
@@ -6,13 +6,15 @@
         <li><a href="#two">Testimoni</a></li>
         <li><a href="#three">Galeri</a></li>
         <li><a href="#four">Berita</a></li>
+        <li><a href="/#open-modal">Pembelian</a></li>
     </ul>
-</nav>";s:5:"mtime";i:1593524276;s:6:"markup";s:241:"<!-- Nav -->
+</nav>";s:5:"mtime";i:1593704043;s:6:"markup";s:296:"<!-- Nav -->
 <nav id="nav">
     <ul>
         <li><a href="#one">Citratus</a></li>
         <li><a href="#two">Testimoni</a></li>
         <li><a href="#three">Galeri</a></li>
         <li><a href="#four">Berita</a></li>
+        <li><a href="/#open-modal">Pembelian</a></li>
     </ul>
 </nav>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

@@ -1,0 +1,27 @@
+columns:
+    email:
+        label: 'Company Email'
+        type: text
+        searchable: false
+    phone:
+        label: 'Company Phone'
+        type: text
+    address:
+        label: 'Company Address'
+        type: text
+    twitter_link:
+        label: 'Twitter Link'
+        type: text
+        invisible: true
+    facebook_link:
+        label: 'Facebook Link'
+        type: text
+        invisible: true
+    instagram_link:
+        label: 'Instagram Link'
+        type: text
+        invisible: true
+    map_google_link:
+        label: 'Google Maps Embed Link'
+        type: text
+        invisible: true

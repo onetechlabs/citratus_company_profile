@@ -41,32 +41,97 @@ class __TwigTemplate_b56f71bb95f69dc2da2816f44bd84bec59637d27a172742ba583dc8f312
         padding: 10px;
         border-radius: 21px;
     \">
-        <span class=\"logo\"><img src=\"";
-        // line 8
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/konten_citratus/logowilhels.png");
-        echo "\" style=\" width: 200px; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px;\" alt=\"Logo\" /></span>
-        <p>
-            <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.6080632341086!2d108.39568361477161!3d-6.695369095159331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDEnNDMuMyJTIDEwOMKwMjMnNTIuMyJF!5e0!3m2!1sid!2sid!4v1591119932780!5m2!1sid!2sid\" width=\"100%\" height=\"225\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
+       <p>
+          <iframe src=\"";
+        // line 9
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "map_google_link", [], "any", false, false, false, 9), "html", null, true);
+        echo "\" width=\"100%\" height=\"100%\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
+
         </p>
     </section>
     <section>
-        <h2>Kontak Kami</h2>
+        <h2>Kontak Kami </h2>
         <dl class=\"alt\">
             <dt>Alamat</dt>
-            <dd>Jl. RAYA PALIMANAN GEMPOL DESA KEDUNG BUNDAR, KEC. GEMPOL ,CIREBON</dd>
+            <dd>";
+        // line 17
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "address", [], "any", false, false, false, 17), "html", null, true);
+        echo "</dd>
             <dt>Phone</dt>
-            <dd>(+62) 000 0000 0000</dd>
+            <dd>";
+        // line 19
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "phone", [], "any", false, false, false, 19), "html", null, true);
+        echo "</dd>
             <dt>Email</dt>
-            <dd><a href=\"#\">info@mail.com</a></dd>
+            <dd><a href=\"mailto:";
+        // line 21
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "email", [], "any", false, false, false, 21), "html", null, true);
+        echo "\">";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "email", [], "any", false, false, false, 21), "html", null, true);
+        echo "</a></dd>
         </dl>
         <ul class=\"icons\">
-            <li><a href=\"#\" class=\"icon fa-twitter alt\"><span class=\"label\">Twitter</span></a></li>
-            <li><a href=\"#\" class=\"icon fa-facebook alt\"><span class=\"label\">Facebook</span></a></li>
-            <li><a href=\"#\" class=\"icon fa-instagram alt\"><span class=\"label\">Instagram</span></a></li>
-        </ul>
+            ";
+        // line 24
+        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 24) != "")) {
+            // line 25
+            echo "                <li><a href=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 25), "html", null, true);
+            echo "\" class=\"icon fa-twitter alt\"><span class=\"label\">Twitter</span></a></li>
+            ";
+        }
+        // line 27
+        echo "
+            ";
+        // line 28
+        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "facebook_link", [], "any", false, false, false, 28) != "")) {
+            // line 29
+            echo "                <li><a href=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 29), "html", null, true);
+            echo "\" class=\"icon fa-facebook alt\"><span class=\"label\">Facebook</span></a></li>
+            ";
+        }
+        // line 31
+        echo "
+            ";
+        // line 32
+        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "instagram_link", [], "any", false, false, false, 32) != "")) {
+            // line 33
+            echo "                <li><a href=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 33), "html", null, true);
+            echo "\" class=\"icon fa-instagram alt\"><span class=\"label\">Instagram</span></a></li>
+            ";
+        }
+        // line 35
+        echo "        </ul>
     </section>
-    <p class=\"copyright\">Copyright &copy; Wilhels briket indonesia .</p>
-</footer>";
+    <p class=\"copyright\">Copyright &copy; ";
+        // line 37
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "theme", [], "any", false, false, false, 37), "website_name", [], "any", false, false, false, 37), "html", null, true);
+        echo " .</p>
+</footer>
+<div id=\"open-modal\" class=\"modal-window\">
+    <div>
+        <a href=\"#\" title=\"Close\" class=\"modal-close\">Tutup</a>
+        <h1>";
+        // line 42
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Pi"] ?? null), "heading_online_store", [], "any", false, false, false, 42), "html", null, true);
+        echo "</h1>
+        <div style=\"color: #8c8c8c;height: 80px;overflow: auto;\">";
+        // line 43
+        echo twig_get_attribute($this->env, $this->source, ($context["Pi"] ?? null), "online_store_information", [], "any", false, false, false, 43);
+        echo "</div>
+        <hr style=\"border-bottom-color: rgba(191, 191, 191, 0.35);\">
+        <h1>";
+        // line 45
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Pi"] ?? null), "heading_offline_store", [], "any", false, false, false, 45), "html", null, true);
+        echo "</h1>
+        <div style=\"color: #8c8c8c;height: 80px;overflow: auto;\">";
+        // line 46
+        echo twig_get_attribute($this->env, $this->source, ($context["Pi"] ?? null), "offline_store_information", [], "any", false, false, false, 46);
+        echo "</div>
+    </div>
+</div>";
     }
 
     public function getTemplateName()
@@ -81,7 +146,7 @@ class __TwigTemplate_b56f71bb95f69dc2da2816f44bd84bec59637d27a172742ba583dc8f312
 
     public function getDebugInfo()
     {
-        return array (  46 => 8,  37 => 1,);
+        return array (  131 => 46,  127 => 45,  122 => 43,  118 => 42,  110 => 37,  106 => 35,  100 => 33,  98 => 32,  95 => 31,  89 => 29,  87 => 28,  84 => 27,  78 => 25,  76 => 24,  68 => 21,  63 => 19,  58 => 17,  47 => 9,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -93,28 +158,46 @@ class __TwigTemplate_b56f71bb95f69dc2da2816f44bd84bec59637d27a172742ba583dc8f312
         padding: 10px;
         border-radius: 21px;
     \">
-        <span class=\"logo\"><img src=\"{{'assets/images/konten_citratus/logowilhels.png'|theme}}\" style=\" width: 200px; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px;\" alt=\"Logo\" /></span>
-        <p>
-            <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.6080632341086!2d108.39568361477161!3d-6.695369095159331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNDEnNDMuMyJTIDEwOMKwMjMnNTIuMyJF!5e0!3m2!1sid!2sid!4v1591119932780!5m2!1sid!2sid\" width=\"100%\" height=\"225\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
+       <p>
+          <iframe src=\"{{Contact.map_google_link}}\" width=\"100%\" height=\"100%\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
+
         </p>
     </section>
     <section>
-        <h2>Kontak Kami</h2>
+        <h2>Kontak Kami </h2>
         <dl class=\"alt\">
             <dt>Alamat</dt>
-            <dd>Jl. RAYA PALIMANAN GEMPOL DESA KEDUNG BUNDAR, KEC. GEMPOL ,CIREBON</dd>
+            <dd>{{Contact.address}}</dd>
             <dt>Phone</dt>
-            <dd>(+62) 000 0000 0000</dd>
+            <dd>{{Contact.phone}}</dd>
             <dt>Email</dt>
-            <dd><a href=\"#\">info@mail.com</a></dd>
+            <dd><a href=\"mailto:{{Contact.email}}\">{{Contact.email}}</a></dd>
         </dl>
         <ul class=\"icons\">
-            <li><a href=\"#\" class=\"icon fa-twitter alt\"><span class=\"label\">Twitter</span></a></li>
-            <li><a href=\"#\" class=\"icon fa-facebook alt\"><span class=\"label\">Facebook</span></a></li>
-            <li><a href=\"#\" class=\"icon fa-instagram alt\"><span class=\"label\">Instagram</span></a></li>
+            {% if Contact.twitter_link != \"\" %}
+                <li><a href=\"{{Contact.twitter_link}}\" class=\"icon fa-twitter alt\"><span class=\"label\">Twitter</span></a></li>
+            {% endif %}
+
+            {% if Contact.facebook_link != \"\" %}
+                <li><a href=\"{{Contact.twitter_link}}\" class=\"icon fa-facebook alt\"><span class=\"label\">Facebook</span></a></li>
+            {% endif %}
+
+            {% if Contact.instagram_link != \"\" %}
+                <li><a href=\"{{Contact.twitter_link}}\" class=\"icon fa-instagram alt\"><span class=\"label\">Instagram</span></a></li>
+            {% endif %}
         </ul>
     </section>
-    <p class=\"copyright\">Copyright &copy; Wilhels briket indonesia .</p>
-</footer>", "/home/onetechlabs/MyProjectsOnLinux/PHPProjects/citratus_company_profile/themes/zwiebl-zwiebl_stellar/partials/all_pages/footer.htm", "");
+    <p class=\"copyright\">Copyright &copy; {{ this.theme.website_name }} .</p>
+</footer>
+<div id=\"open-modal\" class=\"modal-window\">
+    <div>
+        <a href=\"#\" title=\"Close\" class=\"modal-close\">Tutup</a>
+        <h1>{{Pi.heading_online_store }}</h1>
+        <div style=\"color: #8c8c8c;height: 80px;overflow: auto;\">{{Pi.online_store_information|raw }}</div>
+        <hr style=\"border-bottom-color: rgba(191, 191, 191, 0.35);\">
+        <h1>{{Pi.heading_offline_store }}</h1>
+        <div style=\"color: #8c8c8c;height: 80px;overflow: auto;\">{{Pi.offline_store_information|raw }}</div>
+    </div>
+</div>", "/home/onetechlabs/MyProjectsOnLinux/PHPProjects/citratus_company_profile/themes/zwiebl-zwiebl_stellar/partials/all_pages/footer.htm", "");
     }
 }

@@ -1,9 +1,10 @@
-1593533264a:1:{s:21:"html_base/scripts.htm";a:6:{s:8:"fileName";s:21:"html_base/scripts.htm";s:7:"content";s:404:"==
+1593837005a:1:{s:21:"html_base/scripts.htm";a:6:{s:8:"fileName";s:21:"html_base/scripts.htm";s:7:"content";s:406:"==
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/{{ this.theme.jQuery_version }}/jquery.min.js"></script>
 {% if this.theme.load_octobercms_framework %}
 {% framework extras %}
 {% endif %}
-<script src="{{ ['assets/js/jquery.min.js','assets/js/jquery.scrollex.min.js', 'assets/js/jquery.scrolly.min.js', 'assets/js/skel.min.js', 'assets/js/util.js', 'assets/js/main.js']|theme }}"></script>";s:5:"mtime";i:1593524276;s:6:"markup";s:400:"<script src="https://ajax.googleapis.com/ajax/libs/jquery/{{ this.theme.jQuery_version }}/jquery.min.js"></script>
+<script src="{{ ['assets/js/jquery.min.js','assets/js/jquery.scrollex.min.js', 'assets/js/jquery.scrolly.min.js', 'assets/js/skel.min.js', 'assets/js/util.js', 'assets/js/main.js']|theme }}"></script>
+";s:5:"mtime";i:1593832618;s:6:"markup";s:400:"<script src="https://ajax.googleapis.com/ajax/libs/jquery/{{ this.theme.jQuery_version }}/jquery.min.js"></script>
 {% if this.theme.load_octobercms_framework %}
 {% framework extras %}
 {% endif %}

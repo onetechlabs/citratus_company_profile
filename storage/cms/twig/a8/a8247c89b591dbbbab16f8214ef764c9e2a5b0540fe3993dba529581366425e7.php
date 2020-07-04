@@ -57,6 +57,10 @@ class __TwigTemplate_7be73bee0e1888b9c3b83e66fe077b3a48264407494ae4942464c928f62
             echo "active";
         }
         echo "\">Citratus</a></li>
+        <li><a href=\"";
+        // line 7
+        echo call_user_func_array($this->env->getFunction('url_current')->getCallable(), ["current"]);
+        echo "#open-modal\">Pembelian</a></li>
     </ul>
 </nav>";
     }
@@ -73,7 +77,7 @@ class __TwigTemplate_7be73bee0e1888b9c3b83e66fe077b3a48264407494ae4942464c928f62
 
     public function getDebugInfo()
     {
-        return array (  54 => 6,  46 => 5,  42 => 4,  37 => 1,);
+        return array (  62 => 7,  54 => 6,  46 => 5,  42 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -84,6 +88,7 @@ class __TwigTemplate_7be73bee0e1888b9c3b83e66fe077b3a48264407494ae4942464c928f62
         <li><a href=\"{{ 'home'|page }}\">Beranda</a></li>
         <li><a href=\"{{ 'blog'|page }}\" class=\"{% if this.page.id == 'blog' %}active{% endif %}\">Berita</a></li>
         <li><a href=\"{{ 'apa-itu-citratus'|page }}\" class=\"{% if this.page.id == 'apa-itu-citratus' %}active{% endif %}\">Citratus</a></li>
+        <li><a href=\"{{ url_current() }}#open-modal\">Pembelian</a></li>
     </ul>
 </nav>", "/home/onetechlabs/MyProjectsOnLinux/PHPProjects/citratus_company_profile/themes/zwiebl-zwiebl_stellar/partials/all_pages/navigation.htm", "");
     }

@@ -5,5 +5,6 @@
         <li><a href="{{ 'home'|page }}">Beranda</a></li>
         <li><a href="{{ 'blog'|page }}" class="{% if this.page.id == 'blog' %}active{% endif %}">Berita</a></li>
         <li><a href="{{ 'apa-itu-citratus'|page }}" class="{% if this.page.id == 'apa-itu-citratus' %}active{% endif %}">Citratus</a></li>
+        <li><a href="{{ url_current() }}#open-modal">Pembelian</a></li>
     </ul>
 </nav>

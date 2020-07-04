@@ -39,63 +39,58 @@ class __TwigTemplate_440ad2e63633bf7805b312e90ba730ab2d968629ca8a9dc0e0b0bf82e8e
     <header class=\"major\">
         <h2>Galeri Kami</h2>
     </header>
-    <div class=\"flex-container\">
-    <div class=\"flexslider\">
-        <ul class=\"slides\">
-            ";
+
+
+    <div class=\"masonry\">
+      ";
         // line 9
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["gallery"] ?? null));
-        $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 10
-            echo "                <li>
-                    <img src=\"storage/app/media/konten_citratus/citratus_images/";
+            echo "        <a href=\"#open-image-";
+            echo twig_escape_filter($this->env, $context["item"], "html", null, true);
+            echo "\"><div class=\"item\"><img src=\"storage/app/media/konten_citratus/citratus_images/";
+            echo twig_escape_filter($this->env, $context["item"], "html", null, true);
+            echo "\" /></div></a>
+        <div id=\"open-image-";
             // line 11
             echo twig_escape_filter($this->env, $context["item"], "html", null, true);
-            echo "\"/>
-                </li>
-            ";
-            $context['_iterated'] = true;
-        }
-        if (!$context['_iterated']) {
+            echo "\" class=\"modal-window\">
+            <div>
+                <a href=\"#three\" title=\"Close\" class=\"modal-close\">Tutup</a><br><br>
+                <center><img src=\"storage/app/media/konten_citratus/citratus_images/";
             // line 14
-            echo "            ";
+            echo twig_escape_filter($this->env, $context["item"], "html", null, true);
+            echo "\" style=\"width:'100%'; max-height:400px;\" /></center>
+            </div>
+        </div>
+      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 15
-        echo "        </ul>
-    </div>
-    </div>
-    <div style=\"margin-top:20px; text-align: center;\" class=\"gallery_videos\">
-    ";
-        // line 19
+        // line 18
+        echo "      ";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["gallery_videos"] ?? null));
-        $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 20
-            echo "        <video style=\"height: 300px; margin:10px;\" autobuffer controls>
-          <source id=\"mp4\" src=\"storage/app/media/konten_citratus/citratus_videos/";
+            // line 19
+            echo "        <div class=\"item\">
+          <video autobuffer controls>
+            <source id=\"mp4\" src=\"storage/app/media/konten_citratus/citratus_videos/";
             // line 21
             echo twig_escape_filter($this->env, $context["item"], "html", null, true);
             echo "\" type=\"video/mp4\">
-        </video>
-    ";
-            $context['_iterated'] = true;
-        }
-        if (!$context['_iterated']) {
-            // line 24
-            echo "        <h2>No Videos</h2>
-    ";
+          </video>
+        </div>
+      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
-        echo "    <div>
+        // line 25
+        echo "  \t</div>
 </section>";
     }
 
@@ -111,7 +106,7 @@ class __TwigTemplate_440ad2e63633bf7805b312e90ba730ab2d968629ca8a9dc0e0b0bf82e8e
 
     public function getDebugInfo()
     {
-        return array (  98 => 26,  91 => 24,  83 => 21,  80 => 20,  75 => 19,  69 => 15,  63 => 14,  55 => 11,  52 => 10,  47 => 9,  37 => 1,);
+        return array (  93 => 25,  83 => 21,  79 => 19,  74 => 18,  64 => 14,  58 => 11,  51 => 10,  47 => 9,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -121,27 +116,26 @@ class __TwigTemplate_440ad2e63633bf7805b312e90ba730ab2d968629ca8a9dc0e0b0bf82e8e
     <header class=\"major\">
         <h2>Galeri Kami</h2>
     </header>
-    <div class=\"flex-container\">
-    <div class=\"flexslider\">
-        <ul class=\"slides\">
-            {% for item in gallery %}
-                <li>
-                    <img src=\"storage/app/media/konten_citratus/citratus_images/{{item}}\"/>
-                </li>
-            {% else %}
-            {% endfor %}
-        </ul>
-    </div>
-    </div>
-    <div style=\"margin-top:20px; text-align: center;\" class=\"gallery_videos\">
-    {% for item in gallery_videos %}
-        <video style=\"height: 300px; margin:10px;\" autobuffer controls>
-          <source id=\"mp4\" src=\"storage/app/media/konten_citratus/citratus_videos/{{item}}\" type=\"video/mp4\">
-        </video>
-    {% else %}
-        <h2>No Videos</h2>
-    {% endfor %}
-    <div>
+
+
+    <div class=\"masonry\">
+      {% for item in gallery %}
+        <a href=\"#open-image-{{item}}\"><div class=\"item\"><img src=\"storage/app/media/konten_citratus/citratus_images/{{item}}\" /></div></a>
+        <div id=\"open-image-{{item}}\" class=\"modal-window\">
+            <div>
+                <a href=\"#three\" title=\"Close\" class=\"modal-close\">Tutup</a><br><br>
+                <center><img src=\"storage/app/media/konten_citratus/citratus_images/{{item}}\" style=\"width:'100%'; max-height:400px;\" /></center>
+            </div>
+        </div>
+      {% endfor %}
+      {% for item in gallery_videos %}
+        <div class=\"item\">
+          <video autobuffer controls>
+            <source id=\"mp4\" src=\"storage/app/media/konten_citratus/citratus_videos/{{item}}\" type=\"video/mp4\">
+          </video>
+        </div>
+      {% endfor %}
+  \t</div>
 </section>", "/home/onetechlabs/MyProjectsOnLinux/PHPProjects/citratus_company_profile/themes/zwiebl-zwiebl_stellar/partials/home_page/section_three.htm", "");
     }
 }

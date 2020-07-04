@@ -1,0 +1,11 @@
+plugin:
+    name: 'onetechlabs.purchaseinformation::lang.plugin.name'
+    description: 'onetechlabs.purchaseinformation::lang.plugin.description'
+    author: Onetechlabs
+    icon: oc-icon-shopping-cart
+    homepage: ''
+navigation:
+    Purchaseinformation:
+        label: 'onetechlabs.purchaseinformation::lang.plugin.name'
+        url: onetechlabs/purchaseinformation/purchaseinformation
+        icon: icon-shopping-cart

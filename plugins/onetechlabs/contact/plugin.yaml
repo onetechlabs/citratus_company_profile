@@ -1,0 +1,11 @@
+plugin:
+    name: 'onetechlabs.contact::lang.plugin.name'
+    description: 'Contact Information Company'
+    author: Onetechlabs
+    icon: oc-icon-phone
+    homepage: ''
+navigation:
+    company-contact:
+        label: 'Company Contact'
+        url: onetechlabs/contact/contact
+        icon: icon-phone

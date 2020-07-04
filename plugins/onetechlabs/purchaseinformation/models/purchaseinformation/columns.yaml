@@ -1,0 +1,7 @@
+columns:
+    heading_online_store:
+        label: 'Heading Online Store'
+        type: text
+    heading_offline_store:
+        label: 'Heading Offline Store'
+        type: text

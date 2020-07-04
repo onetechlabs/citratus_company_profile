@@ -41,6 +41,7 @@ class __TwigTemplate_a3eafb278d49c29d0c180ab15a23d06097a4480b30e2b5b86d43862b1f3
         <li><a href=\"#two\">Testimoni</a></li>
         <li><a href=\"#three\">Galeri</a></li>
         <li><a href=\"#four\">Berita</a></li>
+        <li><a href=\"/#open-modal\">Pembelian</a></li>
     </ul>
 </nav>";
     }
@@ -64,6 +65,7 @@ class __TwigTemplate_a3eafb278d49c29d0c180ab15a23d06097a4480b30e2b5b86d43862b1f3
         <li><a href=\"#two\">Testimoni</a></li>
         <li><a href=\"#three\">Galeri</a></li>
         <li><a href=\"#four\">Berita</a></li>
+        <li><a href=\"/#open-modal\">Pembelian</a></li>
     </ul>
 </nav>", "/home/onetechlabs/MyProjectsOnLinux/PHPProjects/citratus_company_profile/themes/zwiebl-zwiebl_stellar/partials/home_page/navigation.htm", "");
     }

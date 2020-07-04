@@ -226,8 +226,13 @@ class NavigationManager
                 Log::error($errorMessage);
             }
         }
-
         $this->addMainMenuItems($owner, $definitions);
+        //comment line to remove
+        //remove menu admin
+        $this->removeMainMenuItem($owner, "builder");
+        $this->removeMainMenuItem($owner, "cms");
+        $this->removeMainMenuItem($owner, "system");
+
     }
 
     /**

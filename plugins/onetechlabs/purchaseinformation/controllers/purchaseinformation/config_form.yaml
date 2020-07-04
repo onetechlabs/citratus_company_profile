@@ -1,0 +1,10 @@
+name: 'Purchase Information'
+form: $/onetechlabs/purchaseinformation/models/purchaseinformation/fields.yaml
+modelClass: Onetechlabs\PurchaseInformation\Models\Purchaseinformation
+defaultRedirect: onetechlabs/purchaseinformation/purchaseinformation
+create:
+    redirect: 'onetechlabs/purchaseinformation/purchaseinformation/update/:id'
+    redirectClose: onetechlabs/purchaseinformation/purchaseinformation
+update:
+    redirect: onetechlabs/purchaseinformation/purchaseinformation
+    redirectClose: onetechlabs/purchaseinformation/purchaseinformation

@@ -39,7 +39,7 @@ class __TwigTemplate_41bc49c110573ead5e235cffd0660cf88ebad0d7aba2f2fd1e5507000c6
         echo "<section id=\"two\" class=\"main\">
     <header class=\"major\">
         <h2>Apa yang dikatakan pelanggan kami ?</h2>
-        <p><input type=\"submit\" value=\"Stop Testimonies\" onclick=\"stopSlider(this)\"/></p>
+        <p><input type=\"submit\" value=\"Start Testimonies\" onclick=\"stopSlider(this)\"/></p>
     </header>
     <div id=\"testimonials\" class=\"container\">
         <ul id=\"testi_slider\">
@@ -148,7 +148,7 @@ class __TwigTemplate_41bc49c110573ead5e235cffd0660cf88ebad0d7aba2f2fd1e5507000c6
 <section id=\"two\" class=\"main\">
     <header class=\"major\">
         <h2>Apa yang dikatakan pelanggan kami ?</h2>
-        <p><input type=\"submit\" value=\"Stop Testimonies\" onclick=\"stopSlider(this)\"/></p>
+        <p><input type=\"submit\" value=\"Start Testimonies\" onclick=\"stopSlider(this)\"/></p>
     </header>
     <div id=\"testimonials\" class=\"container\">
         <ul id=\"testi_slider\">

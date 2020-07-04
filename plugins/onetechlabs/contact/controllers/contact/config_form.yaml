@@ -1,0 +1,10 @@
+name: Contact
+form: $/onetechlabs/contact/models/contact/fields.yaml
+modelClass: Onetechlabs\Contact\Models\Contact
+defaultRedirect: onetechlabs/contact/contact
+create:
+    redirect: 'onetechlabs/contact/contact/update/:id'
+    redirectClose: onetechlabs/contact/contact
+update:
+    redirect: onetechlabs/contact/contact
+    redirectClose: onetechlabs/contact/contact

@@ -1,0 +1,72 @@
+tabs:
+    fields:
+        twitter_link:
+            label: 'Twitter Link'
+            span: full
+            placeholder: ''
+            context:
+                - update
+                - preview
+            type: text
+            comment: 'Twitter URL / Link'
+            tab: 'Additional Form'
+        facebook_link:
+            label: 'Facebook Link'
+            span: full
+            context:
+                - update
+                - preview
+            type: text
+            comment: 'Facebook URL /  Link'
+            tab: 'Additional Form'
+        instagram_link:
+            label: 'Instagram Link'
+            span: full
+            context:
+                - update
+                - preview
+            type: text
+            comment: 'Instagram URL / Link'
+            tab: 'Additional Form'
+        email:
+            label: Email
+            span: left
+            placeholder: ''
+            required: 1
+            context:
+                - update
+                - preview
+            type: text
+            comment: 'Email Company'
+            tab: 'Required Form'
+        phone:
+            label: Phone
+            span: right
+            required: 1
+            context:
+                - update
+                - preview
+            type: text
+            comment: 'Phone Company'
+            tab: 'Required Form'
+        address:
+            label: Address
+            size: large
+            span: full
+            required: 1
+            context:
+                - update
+                - preview
+            type: textarea
+            comment: 'Company Address'
+            tab: 'Required Form'
+        map_google_link:
+            label: 'Embed Google Map'
+            size: large
+            span: full
+            context:
+                - update
+                - preview
+            type: textarea
+            comment: 'Open Google Map > Share > Embed and Copy link in IFRAME'
+            tab: 'Required Form'

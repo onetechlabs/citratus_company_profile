@@ -1,0 +1,41 @@
+tabs:
+    fields:
+        heading_online_store:
+            label: 'Heading Online Store'
+            span: full
+            required: 1
+            context:
+                - update
+                - preview
+            type: text
+            tab: 'Online Store'
+        online_store_information:
+            label: 'Online Store Information'
+            size: large
+            span: full
+            required: 1
+            stretch: 0
+            context:
+                - update
+                - preview
+            type: richeditor
+            tab: 'Online Store'
+        heading_offline_store:
+            label: 'Heading Offline Store'
+            span: full
+            required: 1
+            context:
+                - update
+                - preview
+            type: text
+            tab: 'Offline Store'
+        offline_store_information:
+            label: 'Offline Store Information'
+            size: large
+            span: full
+            required: 1
+            context:
+                - update
+                - preview
+            type: richeditor
+            tab: 'Offline Store'

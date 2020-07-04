@@ -380,14 +380,175 @@ class __TwigTemplate_0fe707b014c10c84c8060596893f3490d1bfa85d4a25ec1bcd2613c996b
     \tborder-radius: 2px;
     }
 
+    .modal-window {
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.25);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .modal-window:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .modal-window > div {
+      width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      padding: 2em;
+      background: #ffffff;
+    }
+    .modal-window header {
+      font-weight: bold;
+    }
+    .modal-window h1 {
+      font-size: 150%;
+      margin: 0 0 15px;
+      color: #84B945;
+    }
+
+    .modal-close {
+      color: #aaa;
+      line-height: 50px;
+      font-size: 80%;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 70px;
+      text-decoration: none;
+    }
+    .modal-close:hover {
+      color: black;
+    }
+
+    .modal-window div:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+    ul {
+    margin: 0 !important;
+    }
+    img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+    .wrapper-masonry {
+        width: 90%;
+        margin: 1.5em auto;
+    }
+
+    .masonry {
+        margin: 1.5em 0;
+        padding: 0;
+        -moz-column-gap: 1.5em;
+        -webkit-column-gap: 1.5em;
+        column-gap: 1.5em;
+        font-size: .85em;
+    }
+
+    .item {
+        display: inline-block;
+        background: #fff;
+        padding: 1.5em;
+        margin: 0 0 1.5em;
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+
+    .title, .footer {
+    text-align: center;
+    }
+
+    .title {
+    font-size: 1.75em;
+    margin: .25em 0;
+    }
+
+    .title a {
+    display: inline-block;
+    padding: .75em 1.25em;
+    color: #888;
+    border: 2px solid #aaa;
+    margin: .25em 1em 1em;
+    text-decoration: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    }
+
+    .title {
+    color: #666;
+    }
+
+    .title a:hover {
+    color: #666;
+    border-color: #888;
+    }
+
+
+    .share-link,
+    .article-link {
+    color: #888;
+    }
+
+    @media only screen and (min-width: 700px) {
+        .masonry {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        .masonry {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+        }
+    }
+
+    @media only screen and (min-width: 1100px) {
+        .masonry {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        .wrapper-masonry {
+            width: 1260px;
+        }
+    }
+
     </style>
 
     <link href=\"";
-        // line 309
+        // line 470
         echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/main.css", 1 => "assets/sass/zw_custom.scss"]);
         echo "\" rel=\"stylesheet\">
     ";
-        // line 310
+        // line 471
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
     }
@@ -404,7 +565,7 @@ class __TwigTemplate_0fe707b014c10c84c8060596893f3490d1bfa85d4a25ec1bcd2613c996b
 
     public function getDebugInfo()
     {
-        return array (  391 => 310,  387 => 309,  95 => 20,  91 => 19,  87 => 18,  84 => 17,  80 => 15,  77 => 14,  71 => 12,  69 => 11,  64 => 9,  60 => 8,  54 => 7,  50 => 6,  46 => 5,  42 => 4,  37 => 1,);
+        return array (  552 => 471,  548 => 470,  95 => 20,  91 => 19,  87 => 18,  84 => 17,  80 => 15,  77 => 14,  71 => 12,  69 => 11,  64 => 9,  60 => 8,  54 => 7,  50 => 6,  46 => 5,  42 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -713,6 +874,167 @@ class __TwigTemplate_0fe707b014c10c84c8060596893f3490d1bfa85d4a25ec1bcd2613c996b
     \t-webkit-border-radius: 2px;
     \t-moz-border-radius: 2px;
     \tborder-radius: 2px;
+    }
+
+    .modal-window {
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.25);
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .modal-window:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .modal-window > div {
+      width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      padding: 2em;
+      background: #ffffff;
+    }
+    .modal-window header {
+      font-weight: bold;
+    }
+    .modal-window h1 {
+      font-size: 150%;
+      margin: 0 0 15px;
+      color: #84B945;
+    }
+
+    .modal-close {
+      color: #aaa;
+      line-height: 50px;
+      font-size: 80%;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 70px;
+      text-decoration: none;
+    }
+    .modal-close:hover {
+      color: black;
+    }
+
+    .modal-window div:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+    ul {
+    margin: 0 !important;
+    }
+    img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+    .wrapper-masonry {
+        width: 90%;
+        margin: 1.5em auto;
+    }
+
+    .masonry {
+        margin: 1.5em 0;
+        padding: 0;
+        -moz-column-gap: 1.5em;
+        -webkit-column-gap: 1.5em;
+        column-gap: 1.5em;
+        font-size: .85em;
+    }
+
+    .item {
+        display: inline-block;
+        background: #fff;
+        padding: 1.5em;
+        margin: 0 0 1.5em;
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+
+    .title, .footer {
+    text-align: center;
+    }
+
+    .title {
+    font-size: 1.75em;
+    margin: .25em 0;
+    }
+
+    .title a {
+    display: inline-block;
+    padding: .75em 1.25em;
+    color: #888;
+    border: 2px solid #aaa;
+    margin: .25em 1em 1em;
+    text-decoration: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    }
+
+    .title {
+    color: #666;
+    }
+
+    .title a:hover {
+    color: #666;
+    border-color: #888;
+    }
+
+
+    .share-link,
+    .article-link {
+    color: #888;
+    }
+
+    @media only screen and (min-width: 700px) {
+        .masonry {
+            -moz-column-count: 2;
+            -webkit-column-count: 2;
+            column-count: 2;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        .masonry {
+            -moz-column-count: 3;
+            -webkit-column-count: 3;
+            column-count: 3;
+        }
+    }
+
+    @media only screen and (min-width: 1100px) {
+        .masonry {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+        }
+    }
+
+    @media only screen and (min-width: 1280px) {
+        .wrapper-masonry {
+            width: 1260px;
+        }
     }
 
     </style>
