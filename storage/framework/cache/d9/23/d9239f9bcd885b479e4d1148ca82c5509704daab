@@ -1,0 +1,60 @@
+1594873956a:1:{s:12:"services.htm";a:6:{s:8:"fileName";s:12:"services.htm";s:7:"content";s:1486:"==
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Keunggulan Citratus</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="service-item">
+                <h4>100% Herbal</h4>
+                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="service-item">
+                <h4>Bahan Baku Aman</h4>
+                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="service-item">
+                <h4>Ampuh Membunuh Virus & Nyamuk</h4>
+                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1594718162;s:6:"markup";s:1483:"<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Keunggulan Citratus</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+            <div class="service-item">
+                <h4>100% Herbal</h4>
+                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="service-item">
+                <h4>Bahan Baku Aman</h4>
+                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="service-item">
+                <h4>Ampuh Membunuh Virus & Nyamuk</h4>
+                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

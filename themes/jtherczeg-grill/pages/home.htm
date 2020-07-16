@@ -1,0 +1,32 @@
+title = "Home"
+url = "/"
+layout = "default"
+description = "Home Page"
+meta_description = ""
+is_hidden = 0
+==
+<div id="slider">
+    {% partial "slider" %}
+</div>
+
+<div id="services">
+    {% partial "services" %}
+</div>
+
+<div id="latest-blog">
+    {% partial "latest-blog" %}
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Apa yang pelanggan kami katakan ?</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+	<div id="testimonails">
+		{% partial "testimonials" %}
+	</div>
+</div>

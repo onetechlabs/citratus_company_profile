@@ -1,0 +1,22 @@
+1594873956a:1:{s:10:"slider.htm";a:6:{s:8:"fileName";s:10:"slider.htm";s:7:"content";s:590:"==
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <div class="slider-caption">
+                <h1>Apa itu Citratus ?</h1>
+                <p>Disinfektan bakar dibuat dari bahan-bahan alami beraroma menyegarkan <br>untuk membantu mencegah berkembangnya Virus dan Bakteri (COVID-19) serta nyamuk <br>dan serangga pada ruangan anda serta memberikan efek segar alami <br>yang menyenangkan dan tidak menyebabkan sesak nafas .</p>
+            </div>
+        <img src="{{ 'assets/images/background_slide.png'|theme }}" alt="" />
+        </li>
+    </ul>
+</div>";s:5:"mtime";i:1594627070;s:6:"markup";s:587:"<div class="flexslider">
+    <ul class="slides">
+        <li>
+            <div class="slider-caption">
+                <h1>Apa itu Citratus ?</h1>
+                <p>Disinfektan bakar dibuat dari bahan-bahan alami beraroma menyegarkan <br>untuk membantu mencegah berkembangnya Virus dan Bakteri (COVID-19) serta nyamuk <br>dan serangga pada ruangan anda serta memberikan efek segar alami <br>yang menyenangkan dan tidak menyebabkan sesak nafas .</p>
+            </div>
+        <img src="{{ 'assets/images/background_slide.png'|theme }}" alt="" />
+        </li>
+    </ul>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

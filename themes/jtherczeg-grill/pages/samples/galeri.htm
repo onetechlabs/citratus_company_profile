@@ -1,0 +1,88 @@
+title = "galeri"
+url = "/galeri"
+layout = "products"
+description = "Products page"
+meta_description = "Free restaurant theme by templatemo, converted for OctoberCMS"
+is_hidden = 0
+==
+<?php
+use Cms\Classes\Theme;
+function onStart()
+{
+    $imageitems     = [ ];
+    $filesImage     = File::allFiles( 'storage/app/media/konten_citratus/citratus_images/' );
+    foreach ($filesImage as $item) {
+        $imageitems[] = $item->getFilename();
+    }
+    rsort($imageitems, SORT_NUMERIC); // Bigest file number first
+    $this['gallery'] = $imageitems;
+    //dd( $imageitems );
+
+    $videoitems     = [ ];
+    $filesVideo    = File::allFiles( 'storage/app/media/konten_citratus/citratus_videos/' );
+    foreach ($filesVideo as $item) {
+        $videoitems[] = $item->getFilename();
+    }
+    rsort($videoitems, SORT_NUMERIC); // Bigest file number first
+    $this['gallery_videos'] = $videoitems;
+    //dd( $videoitems );
+}
+?>
+==
+<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Galeri Kami</h2>
+                    <span>Beranda / <a href="{{ 'samples/products'|page }}">Galeri Kami</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="products-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="product-heading">
+                    <h2>Galeri Foto & Video</h2>
+                    <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+                </div>
+			</div>
+        </div>
+        <div class="row">
+            <div class="filters col-md-12 col-xs-12">
+                <ul id="filters" class="clearfix" style="padding-left: 0;">
+                    <li><span class="filter" data-filter="all">All</span></li>
+                    <li><span class="filter" data-filter=".image">Foto Foto</span></li>
+                    <li><span class="filter" data-filter=".video">Video</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row masonry" id="Container">
+            {% for item in gallery %}
+              <div class="item mix portfolio-item image">
+                  <div class="portfolio-wrapper">
+                      <div class="portfolio-thumb">
+                          <img src="storage/app/media/konten_citratus/citratus_images/{{item}}" alt="">
+                          <div class="hover">
+                              <div class="hover-iner">
+                                  <a class="fancybox" href="storage/app/media/konten_citratus/citratus_images/{{item}}"><img src="{{ 'assets/images/open-icon.png'|theme }}" alt=""></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            {% endfor %}
+            {% for item in gallery_videos %}
+              <div class="item mix portfolio-item video">
+                <video autobuffer controls>
+                  <source id="mp4" src="storage/app/media/konten_citratus/citratus_videos/{{item}}" type="video/mp4">
+                </video>
+              </div>
+            {% endfor %}
+    	</div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+1594873958a:1:{s:7:"top.htm";a:6:{s:8:"fileName";s:7:"top.htm";s:7:"content";s:1622:"==
+<?php
+use Onetechlabs\Contact\Models\Contact;
+use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
+function onStart()
+{
+    $contact = Contact::find(1);
+    $PiQuery = Purchaseinformation::find(1);
+    $PiFilter = str_replace("<p>","",$PiQuery->online_store_information);
+    $PiSlice = explode("</p>",$PiFilter);
+    $htmlTopLink="";
+    for($startMenu=0; $startMenu < count($PiSlice)-1; $startMenu++){
+      $link=explode("-",$PiSlice[$startMenu]);
+      $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a>";
+    }
+    $this['Pi'] = $htmlTopLink;"";
+    $ptn = "/^0/";
+    $str = $contact['phone'];
+    $rpltxt = "62";
+    $rpltxt2 = "+62 ";
+    $this['Contact'] = preg_replace($ptn, $rpltxt, $str);
+    $this['ContactDisplay'] = preg_replace($ptn, $rpltxt2, $str);
+}
+?>
+==
+<div id="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="home-account">
+                    {{ Pi|raw }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cart-info">
+                    <i class="fa fa-mobile-phone"></i>
+                    (<a href="https://api.whatsapp.com/send?phone={{Contact}}&text=Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+";s:5:"mtime";i:1594728037;s:6:"markup";s:825:"<div id="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="home-account">
+                    {{ Pi|raw }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cart-info">
+                    <i class="fa fa-mobile-phone"></i>
+                    (<a href="https://api.whatsapp.com/send?phone={{Contact}}&text=Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";s:779:"use Onetechlabs\Contact\Models\Contact;
+use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
+function onStart()
+{
+    $contact = Contact::find(1);
+    $PiQuery = Purchaseinformation::find(1);
+    $PiFilter = str_replace("<p>","",$PiQuery->online_store_information);
+    $PiSlice = explode("</p>",$PiFilter);
+    $htmlTopLink="";
+    for($startMenu=0; $startMenu < count($PiSlice)-1; $startMenu++){
+      $link=explode("-",$PiSlice[$startMenu]);
+      $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a>";
+    }
+    $this['Pi'] = $htmlTopLink;"";
+    $ptn = "/^0/";
+    $str = $contact['phone'];
+    $rpltxt = "62";
+    $rpltxt2 = "+62 ";
+    $this['Contact'] = preg_replace($ptn, $rpltxt, $str);
+    $this['ContactDisplay'] = preg_replace($ptn, $rpltxt2, $str);
+}";s:17:"_PARSER_ERROR_INI";s:0:"";}}

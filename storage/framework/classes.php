@@ -269,4 +269,5 @@
   'onetechlabs\\Purchaseinformation\\Controllers\\Purchaseinformation' => 'plugins/onetechlabs/purchaseinformation/controllers/Purchaseinformation.php',
   'Onetechlabs\\Purchaseinformation\\Models\\Purchaseinformation' => 'plugins/onetechlabs/purchaseinformation/models/Purchaseinformation.php',
   'Onetechlabs\\PurchaseInformation\\Models\\Purchaseinformation' => 'plugins/onetechlabs/purchaseinformation/models/Purchaseinformation.php',
+  'Cms\\Twig\\ScriptsNode' => 'modules/cms/twig/ScriptsNode.php',
 );
