@@ -50,19 +50,19 @@ class __TwigTemplate_0326fc33ce320d35d23e8850ce0660e9a34d74adf79a69f0be3b06cb2ba
         <div class=\"col-md-4 col-sm-12\">
             <div class=\"service-item\">
                 <h4>100% Herbal</h4>
-                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                <p>dibuat dari bahan-bahan alami beraroma serai menyegarkan yang sudah digunakan oleh para leluhur sebagai warisan adiluhung .</p>
             </div>
         </div>
         <div class=\"col-md-4 col-sm-12\">
             <div class=\"service-item\">
                 <h4>Bahan Baku Aman</h4>
-                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                <p>Salah satu bahan dasar dari pembuatan citratus adalah kemenyan asli yang dipadu dengan beberapa ramuan herbal justru memberikan efek melegakan pernafasan dan membersihkan udara dan dapat membantu mencegah berkembangnya virus dan bakteri serta nyamuk dan serangga pada ruangan anda.</p>
             </div>
         </div>
         <div class=\"col-md-4 col-sm-12\">
             <div class=\"service-item\">
                 <h4>Ampuh Membunuh Virus & Nyamuk</h4>
-                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                <p>Citratus dibuat bakar dengan tujuan asap yang tercipta dari bahan bahan alami non karbon bisa menembus virus dan bakteri karena asap yang tercipta berukuran nano meter juga.</p>
             </div>
         </div>
     </div>
@@ -99,19 +99,19 @@ class __TwigTemplate_0326fc33ce320d35d23e8850ce0660e9a34d74adf79a69f0be3b06cb2ba
         <div class=\"col-md-4 col-sm-12\">
             <div class=\"service-item\">
                 <h4>100% Herbal</h4>
-                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                <p>dibuat dari bahan-bahan alami beraroma serai menyegarkan yang sudah digunakan oleh para leluhur sebagai warisan adiluhung .</p>
             </div>
         </div>
         <div class=\"col-md-4 col-sm-12\">
             <div class=\"service-item\">
                 <h4>Bahan Baku Aman</h4>
-                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                <p>Salah satu bahan dasar dari pembuatan citratus adalah kemenyan asli yang dipadu dengan beberapa ramuan herbal justru memberikan efek melegakan pernafasan dan membersihkan udara dan dapat membantu mencegah berkembangnya virus dan bakteri serta nyamuk dan serangga pada ruangan anda.</p>
             </div>
         </div>
         <div class=\"col-md-4 col-sm-12\">
             <div class=\"service-item\">
                 <h4>Ampuh Membunuh Virus & Nyamuk</h4>
-                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                <p>Citratus dibuat bakar dengan tujuan asap yang tercipta dari bahan bahan alami non karbon bisa menembus virus dan bakteri karena asap yang tercipta berukuran nano meter juga.</p>
             </div>
         </div>
     </div>

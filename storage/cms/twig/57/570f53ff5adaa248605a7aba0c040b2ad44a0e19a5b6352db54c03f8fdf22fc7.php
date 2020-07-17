@@ -53,7 +53,7 @@ class __TwigTemplate_75416fa516eecffe45c7979a83ff560bf27ff795642b41c9d1a27b27ae0
                     (<a href=\"https://api.whatsapp.com/send?phone=";
         // line 12
         echo twig_escape_filter($this->env, ($context["Contact"] ?? null), "html", null, true);
-        echo "&text=Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\">Tanyakan via Whatsapp</a>) ";
+        echo "&text=Selamat Pagi/Siang/Malam Kak, Saya mau pesen produk citratus ini, bisa dibantu kak?\">Tanyakan via Whatsapp</a>) ";
         echo twig_escape_filter($this->env, ($context["ContactDisplay"] ?? null), "html", null, true);
         echo "
                 </div>
@@ -91,7 +91,7 @@ class __TwigTemplate_75416fa516eecffe45c7979a83ff560bf27ff795642b41c9d1a27b27ae0
             <div class=\"col-md-6\">
                 <div class=\"cart-info\">
                     <i class=\"fa fa-mobile-phone\"></i>
-                    (<a href=\"https://api.whatsapp.com/send?phone={{Contact}}&text=Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
+                    (<a href=\"https://api.whatsapp.com/send?phone={{Contact}}&text=Selamat Pagi/Siang/Malam Kak, Saya mau pesen produk citratus ini, bisa dibantu kak?\">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
                 </div>
             </div>
         </div>
