@@ -270,4 +270,5 @@
   'Onetechlabs\\Purchaseinformation\\Models\\Purchaseinformation' => 'plugins/onetechlabs/purchaseinformation/models/Purchaseinformation.php',
   'Onetechlabs\\PurchaseInformation\\Models\\Purchaseinformation' => 'plugins/onetechlabs/purchaseinformation/models/Purchaseinformation.php',
   'Cms\\Twig\\ScriptsNode' => 'modules/cms/twig/ScriptsNode.php',
+  'Onetechlabs\\Contact\\ReportWidgets\\Contact' => 'plugins/onetechlabs/contact/reportwidgets/Contact.php',
 );

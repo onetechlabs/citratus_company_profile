@@ -1,0 +1,12 @@
+<div class="report-widget">
+  <h3><?= e(trans($this->property('title'))) ?></h3>
+  <b>Email : </b><br><?= e(trans($contact->email)) ?><br>
+  <b>Phone : </b><br><?= e(trans($contact->phone)) ?><br>
+  <b>Address : </b><br><?= e(trans($contact->address)) ?><br>
+  <b>Twitter : </b><br><?= e(trans($contact->twitter_link)) ?><br>
+  <b>Facebook : </b><br><?= e(trans($contact->facebook_link)) ?><br>
+  <b>Instagram : </b><br><?= e(trans($contact->instagram_link)) ?><br>
+  <b>Location on Google Maps : </b><br><br>
+  <iframe src="<?= $contact->map_google_link  ?>" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <br>
+</div>

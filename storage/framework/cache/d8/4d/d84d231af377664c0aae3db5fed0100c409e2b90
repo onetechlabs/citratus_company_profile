@@ -1,4 +1,4 @@
-1594873955a:1:{s:23:"samples/single-post.htm";a:9:{s:8:"fileName";s:23:"samples/single-post.htm";s:7:"content";s:3199:"title = "Blog"
+1594955187a:1:{s:23:"samples/single-post.htm";a:9:{s:8:"fileName";s:23:"samples/single-post.htm";s:7:"content";s:3199:"title = "Blog"
 url = "/single-post/:slug"
 layout = "single-post"
 [blogPost]

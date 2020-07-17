@@ -11,4 +11,16 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
+    /*
+    * Register report widgets
+    */
+    public function registerReportWidgets()
+    {
+        return [
+            'Onetechlabs\Contact\ReportWidgets\Contact' => [
+                'label' => 'Contact',
+                'context' => 'dashboard'
+            ]
+        ];
+    }
 }
