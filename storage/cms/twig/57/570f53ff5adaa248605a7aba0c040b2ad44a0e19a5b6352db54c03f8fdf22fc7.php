@@ -53,7 +53,7 @@ class __TwigTemplate_75416fa516eecffe45c7979a83ff560bf27ff795642b41c9d1a27b27ae0
                     (<a href=\"https://api.whatsapp.com/send?phone=";
         // line 12
         echo twig_escape_filter($this->env, ($context["Contact"] ?? null), "html", null, true);
-        echo "&text=Selamat Pagi/Siang/Malam Kak, Saya mau pesen produk citratus ini, bisa dibantu kak?\">Tanyakan via Whatsapp</a>) ";
+        echo "&text=Hallo%20CS%20Citratus%2C%20saya%20tertarik%20dengan%20Citratus%20nih.%20Boleh%20tanya-nyata%20dulu%3F%20%3A%29\">Tanyakan via Whatsapp</a>) ";
         echo twig_escape_filter($this->env, ($context["ContactDisplay"] ?? null), "html", null, true);
         echo "
                 </div>
@@ -91,7 +91,7 @@ class __TwigTemplate_75416fa516eecffe45c7979a83ff560bf27ff795642b41c9d1a27b27ae0
             <div class=\"col-md-6\">
                 <div class=\"cart-info\">
                     <i class=\"fa fa-mobile-phone\"></i>
-                    (<a href=\"https://api.whatsapp.com/send?phone={{Contact}}&text=Selamat Pagi/Siang/Malam Kak, Saya mau pesen produk citratus ini, bisa dibantu kak?\">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
+                    (<a href=\"https://api.whatsapp.com/send?phone={{Contact}}&text=Hallo%20CS%20Citratus%2C%20saya%20tertarik%20dengan%20Citratus%20nih.%20Boleh%20tanya-nyata%20dulu%3F%20%3A%29\">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
                 </div>
             </div>
         </div>

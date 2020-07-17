@@ -1,4 +1,4 @@
-1594979216a:1:{s:7:"top.htm";a:6:{s:8:"fileName";s:7:"top.htm";s:7:"content";s:1528:"==
+1594980925a:1:{s:7:"top.htm";a:6:{s:8:"fileName";s:7:"top.htm";s:7:"content";s:1555:"==
 <?php
 use Onetechlabs\Contact\Models\Contact;
 use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
@@ -35,13 +35,13 @@ function onStart()
             <div class="col-md-6">
                 <div class="cart-info">
                     <i class="fa fa-mobile-phone"></i>
-                    (<a href="https://api.whatsapp.com/send?phone={{Contact}}&text=Selamat Pagi/Siang/Malam Kak, Saya mau pesen produk citratus ini, bisa dibantu kak?">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
+                    (<a href="https://api.whatsapp.com/send?phone={{Contact}}&text=Hallo%20CS%20Citratus%2C%20saya%20tertarik%20dengan%20Citratus%20nih.%20Boleh%20tanya-nyata%20dulu%3F%20%3A%29">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
                 </div>
             </div>
         </div>
     </div>
 </div>
-";s:5:"mtime";i:1594974415;s:6:"markup";s:679:"<div id="top-header">
+";s:5:"mtime";i:1594980323;s:6:"markup";s:706:"<div id="top-header">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -52,7 +52,7 @@ function onStart()
             <div class="col-md-6">
                 <div class="cart-info">
                     <i class="fa fa-mobile-phone"></i>
-                    (<a href="https://api.whatsapp.com/send?phone={{Contact}}&text=Selamat Pagi/Siang/Malam Kak, Saya mau pesen produk citratus ini, bisa dibantu kak?">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
+                    (<a href="https://api.whatsapp.com/send?phone={{Contact}}&text=Hallo%20CS%20Citratus%2C%20saya%20tertarik%20dengan%20Citratus%20nih.%20Boleh%20tanya-nyata%20dulu%3F%20%3A%29">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
                 </div>
             </div>
         </div>

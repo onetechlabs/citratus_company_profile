@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 17, 2020 at 11:38 AM
+-- Generation Time: Jul 17, 2020 at 12:08 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -394,7 +394,7 @@ CREATE TABLE `onetechlabs_contact_` (
 --
 
 INSERT INTO `onetechlabs_contact_` (`email`, `phone`, `address`, `twitter_link`, `facebook_link`, `instagram_link`, `map_google_link`, `id`) VALUES
-('ptphindonesia@gmail.com', '082112831604', 'Jl. Palem Putri III No.1, RT.02/RW.10, Jawa Barat 16113', 'https://twitter.com/citratusindone1', 'https://www.facebook.com/citratusindonesia/', 'https://www.instagram.com/citratus.id/', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.686185513532!2d106.76578541429288!3d-6.5612387659642275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e72679a9c9%3A0x1e1df9930242f646!2sPT.%20Panji%20Herbal%20Indonesia!5e0!3m2!1sen!2sid!4v1594974059961!5m2!1sen!2sid', 1);
+('ptphindonesia@gmail.com', '082112831609', 'Jl. Palem Putri III No.1, RT.02/RW.10, Jawa Barat 16113', 'https://twitter.com/citratusindone1', 'https://www.facebook.com/citratusindonesia/', 'https://www.instagram.com/citratus.id/', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.686185513532!2d106.76578541429288!3d-6.5612387659642275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c5e72679a9c9%3A0x1e1df9930242f646!2sPT.%20Panji%20Herbal%20Indonesia!5e0!3m2!1sen!2sid!4v1594974059961!5m2!1sen!2sid', 1);
 
 -- --------------------------------------------------------
 
