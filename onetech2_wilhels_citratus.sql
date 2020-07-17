@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 16, 2020 at 12:56 PM
+-- Generation Time: Jul 17, 2020 at 10:09 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -415,7 +415,7 @@ CREATE TABLE `onetechlabs_purchaseinformation_` (
 --
 
 INSERT INTO `onetechlabs_purchaseinformation_` (`id`, `heading_online_store`, `online_store_information`, `heading_offline_store`, `offline_store_information`) VALUES
-(1, 'Our Online Store', '<p>Shoppe-http://shoppe.com</p>\r\n\r\n<p>Lazada-http://shoppe.com</p>\r\n\r\n<p>Tokopedia-http://shoppe.com</p>\r\n\r\n<p>Bukalapak-http://shoppe.com</p>\r\n\r\n<p>BliBli-http://shoppe.com</p>', 'Our Offline Store', '<ul>\r\n	<li>Jakarta\r\n\r\n		<ul>\r\n			<li>Jaksel</li>\r\n			<li>Jakbar</li>\r\n			<li>Jakut</li>\r\n			<li>Jakpus</li>\r\n			<li>Jaktim</li>\r\n		</ul>\r\n	</li>\r\n	<li>Bogor\r\n\r\n		<ul>\r\n			<li>Botim</li>\r\n			<li>Bobar</li>\r\n			<li>Bosel</li>\r\n		</ul>\r\n	</li>\r\n	<li>Kabupaten Bogor\r\n\r\n		<ul>\r\n			<li>Cibinong</li>\r\n			<li>Bojonggede</li>\r\n		</ul>\r\n	</li>\r\n</ul>');
+(1, 'Toko Online Kami', '<p>Shopee-https://shopee.co.id/citratus_indonesia</p>\r\n\r\n<p>Tokopedia-https://www.tokopedia.com/citratus-in</p>\r\n\r\n<p>Bukalapak-https://www.bukalapak.com/u/citratus_indonesia</p>', 'Outlet kami', '<ul>\r\n	<li>Jakarta\r\n\r\n		<ul>\r\n			<li>Jaksel</li>\r\n			<li>Jakbar</li>\r\n			<li>Jakut</li>\r\n			<li>Jakpus</li>\r\n			<li>Jaktim</li>\r\n		</ul>\r\n	</li>\r\n	<li>Bogor\r\n\r\n		<ul>\r\n			<li>Botim</li>\r\n			<li>Bobar</li>\r\n			<li>Bosel</li>\r\n		</ul>\r\n	</li>\r\n	<li>Kabupaten Bogor\r\n\r\n		<ul>\r\n			<li>Cibinong</li>\r\n			<li>Bojonggede</li>\r\n		</ul>\r\n	</li>\r\n</ul>');
 
 -- --------------------------------------------------------
 

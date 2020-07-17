@@ -1,7 +1,7 @@
 <?php 
 use Onetechlabs\Contact\Models\Contact;
 use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
-class Cms5f0e7c3dee8dd705770370_175b6e0fc6dce263c20e87db22b07334Class extends Cms\Classes\PartialCode
+class Cms5f115aa5e6565450678873_03aea9ea3e9ca3a8af1e9f66c9270cf8Class extends Cms\Classes\PartialCode
 {
 public function onStart()
 {
@@ -14,7 +14,8 @@ public function onStart()
       $link=explode("-",$PiSlice[$startMenu]);
       $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a>";
     }
-    $this['Pi'] = $htmlTopLink;"";
+    $this['headingPi']=$PiQuery->heading_online_store;
+    $this['Pi'] = $htmlTopLink;
     $ptn = "/^0/";
     $str = $contact['phone'];
     $rpltxt = "62";

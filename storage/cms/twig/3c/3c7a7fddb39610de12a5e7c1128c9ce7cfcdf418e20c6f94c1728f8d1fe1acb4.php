@@ -72,67 +72,82 @@ class __TwigTemplate_31c2e1a50939e8fdb790ddc0d95f542aef9b98383f848259674a1f64feb
                             <iframe src=\"";
         // line 30
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "map_google_link", [], "any", false, false, false, 30), "html", null, true);
-        echo "\" style=\"width:100%\" height=\"200\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
+        echo "\" style=\"width:100%\" height=\"500\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
                         </div>
                         <div class=\"col-md-4\">
 \t\t\t\t\t\t\t<div class=\"info\">
+                <h4>Alamat</h4>
 \t\t\t\t\t\t\t\t<p>";
-        // line 34
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "address", [], "any", false, false, false, 34), "html", null, true);
+        // line 35
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "address", [], "any", false, false, false, 35), "html", null, true);
         echo "</p>
 \t\t\t\t\t\t\t\t<ul>
                   ";
-        // line 36
-        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "facebook_link", [], "any", false, false, false, 36) != "")) {
-            // line 37
+        // line 37
+        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "facebook_link", [], "any", false, false, false, 37) != "")) {
+            // line 38
             echo "                    <li><i class=\"fa fa-facebook\"></i><a href=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "facebook_link", [], "any", false, false, false, 37), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "facebook_link", [], "any", false, false, false, 38), "html", null, true);
             echo "\">Kunjungi FB</a></li>
                   ";
         }
-        // line 39
+        // line 40
         echo "                  ";
-        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 39) != "")) {
-            // line 40
+        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 40) != "")) {
+            // line 41
             echo "                    <li><i class=\"fa fa-twitter\"></i><a href=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 40), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 41), "html", null, true);
             echo "\">Kunjungi Twitter</a></li>
                   ";
         }
-        // line 42
+        // line 43
         echo "                  ";
-        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "instagram_link", [], "any", false, false, false, 42) != "")) {
-            // line 43
+        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "instagram_link", [], "any", false, false, false, 43) != "")) {
+            // line 44
             echo "                    <li><i class=\"fa fa-instagram\"></i><a href=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "instagram_link", [], "any", false, false, false, 43), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "instagram_link", [], "any", false, false, false, 44), "html", null, true);
             echo "\">Kunjungi IG</a></li>
                   ";
         }
-        // line 45
+        // line 46
         echo "                  ";
-        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "facebook_link", [], "any", false, false, false, 45) != "")) {
-            // line 46
-            echo "                  ";
-        } elseif ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 46) != "")) {
+        if ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "facebook_link", [], "any", false, false, false, 46) != "")) {
             // line 47
             echo "                  ";
-        } elseif ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "instagram_link", [], "any", false, false, false, 47) != "")) {
+        } elseif ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "twitter_link", [], "any", false, false, false, 47) != "")) {
             // line 48
             echo "                  ";
-        } else {
+        } elseif ((twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "instagram_link", [], "any", false, false, false, 48) != "")) {
             // line 49
+            echo "                  ";
+        } else {
+            // line 50
             echo "                    Mohon Seluruh Sosial Media Kami sedang dalam Perbaikan.
                   ";
         }
-        // line 51
+        // line 52
         echo "                  <li><i class=\"fa fa-phone\"></i>";
         echo twig_escape_filter($this->env, ($context["ContactDisplay"] ?? null), "html", null, true);
         echo "</li>
                   <li><i class=\"fa fa-envelope\"></i><a href=\"#\">";
-        // line 52
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "email", [], "any", false, false, false, 52), "html", null, true);
+        // line 53
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["Contact"] ?? null), "email", [], "any", false, false, false, 53), "html", null, true);
         echo "</a></li>
 \t\t\t\t\t\t\t\t</ul>
+                <br>
+                ";
+        // line 56
+        echo twig_escape_filter($this->env, ($context["headingPi"] ?? null), "html", null, true);
+        echo " <hr> ";
+        echo ($context["Pi"] ?? null);
+        echo "
+                <br>
+                ";
+        // line 58
+        echo twig_escape_filter($this->env, ($context["headingPi2"] ?? null), "html", null, true);
+        echo " <hr> ";
+        echo ($context["offline_store_loctation"] ?? null);
+        echo "
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>
@@ -156,7 +171,7 @@ class __TwigTemplate_31c2e1a50939e8fdb790ddc0d95f542aef9b98383f848259674a1f64feb
 
     public function getDebugInfo()
     {
-        return array (  133 => 52,  128 => 51,  124 => 49,  121 => 48,  118 => 47,  115 => 46,  112 => 45,  106 => 43,  103 => 42,  97 => 40,  94 => 39,  88 => 37,  86 => 36,  81 => 34,  74 => 30,  61 => 20,  45 => 7,  37 => 1,);
+        return array (  147 => 58,  140 => 56,  134 => 53,  129 => 52,  125 => 50,  122 => 49,  119 => 48,  116 => 47,  113 => 46,  107 => 44,  104 => 43,  98 => 41,  95 => 40,  89 => 38,  87 => 37,  82 => 35,  74 => 30,  61 => 20,  45 => 7,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -190,10 +205,11 @@ class __TwigTemplate_31c2e1a50939e8fdb790ddc0d95f542aef9b98383f848259674a1f64feb
                 <div class=\"product-item col-md-12\">
                     <div class=\"row\">
                         <div class=\"col-md-8\">
-                            <iframe src=\"{{Contact.map_google_link}}\" style=\"width:100%\" height=\"200\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
+                            <iframe src=\"{{Contact.map_google_link}}\" style=\"width:100%\" height=\"500\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>
                         </div>
                         <div class=\"col-md-4\">
 \t\t\t\t\t\t\t<div class=\"info\">
+                <h4>Alamat</h4>
 \t\t\t\t\t\t\t\t<p>{{Contact.address}}</p>
 \t\t\t\t\t\t\t\t<ul>
                   {% if Contact.facebook_link != \"\" %}
@@ -214,6 +230,10 @@ class __TwigTemplate_31c2e1a50939e8fdb790ddc0d95f542aef9b98383f848259674a1f64feb
                   <li><i class=\"fa fa-phone\"></i>{{ContactDisplay}}</li>
                   <li><i class=\"fa fa-envelope\"></i><a href=\"#\">{{Contact.email}}</a></li>
 \t\t\t\t\t\t\t\t</ul>
+                <br>
+                {{headingPi}} <hr> {{ Pi|raw }}
+                <br>
+                {{headingPi2}} <hr> {{ offline_store_loctation|raw }}
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
 \t\t\t\t\t</div>

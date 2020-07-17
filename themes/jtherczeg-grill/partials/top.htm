@@ -13,7 +13,8 @@ function onStart()
       $link=explode("-",$PiSlice[$startMenu]);
       $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a>";
     }
-    $this['Pi'] = $htmlTopLink;"";
+    $this['headingPi']=$PiQuery->heading_online_store;
+    $this['Pi'] = $htmlTopLink;
     $ptn = "/^0/";
     $str = $contact['phone'];
     $rpltxt = "62";
@@ -28,7 +29,7 @@ function onStart()
         <div class="row">
             <div class="col-md-6">
                 <div class="home-account">
-                    {{ Pi|raw }}
+                    {{headingPi}} | {{ Pi|raw }}
                 </div>
             </div>
             <div class="col-md-6">

@@ -41,6 +41,8 @@ class __TwigTemplate_75416fa516eecffe45c7979a83ff560bf27ff795642b41c9d1a27b27ae0
                 <div class=\"home-account\">
                     ";
         // line 6
+        echo twig_escape_filter($this->env, ($context["headingPi"] ?? null), "html", null, true);
+        echo " | ";
         echo ($context["Pi"] ?? null);
         echo "
                 </div>
@@ -73,7 +75,7 @@ class __TwigTemplate_75416fa516eecffe45c7979a83ff560bf27ff795642b41c9d1a27b27ae0
 
     public function getDebugInfo()
     {
-        return array (  53 => 12,  44 => 6,  37 => 1,);
+        return array (  55 => 12,  44 => 6,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -83,7 +85,7 @@ class __TwigTemplate_75416fa516eecffe45c7979a83ff560bf27ff795642b41c9d1a27b27ae0
         <div class=\"row\">
             <div class=\"col-md-6\">
                 <div class=\"home-account\">
-                    {{ Pi|raw }}
+                    {{headingPi}} | {{ Pi|raw }}
                 </div>
             </div>
             <div class=\"col-md-6\">

@@ -1,4 +1,4 @@
-1594955190a:1:{s:7:"top.htm";a:6:{s:8:"fileName";s:7:"top.htm";s:7:"content";s:1622:"==
+1594973437a:1:{s:7:"top.htm";a:6:{s:8:"fileName";s:7:"top.htm";s:7:"content";s:1690:"==
 <?php
 use Onetechlabs\Contact\Models\Contact;
 use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
@@ -13,7 +13,8 @@ function onStart()
       $link=explode("-",$PiSlice[$startMenu]);
       $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a>";
     }
-    $this['Pi'] = $htmlTopLink;"";
+    $this['headingPi']=$PiQuery->heading_online_store;
+    $this['Pi'] = $htmlTopLink;
     $ptn = "/^0/";
     $str = $contact['phone'];
     $rpltxt = "62";
@@ -28,7 +29,7 @@ function onStart()
         <div class="row">
             <div class="col-md-6">
                 <div class="home-account">
-                    {{ Pi|raw }}
+                    {{headingPi}} | {{ Pi|raw }}
                 </div>
             </div>
             <div class="col-md-6">
@@ -40,12 +41,12 @@ function onStart()
         </div>
     </div>
 </div>
-";s:5:"mtime";i:1594728037;s:6:"markup";s:825:"<div id="top-header">
+";s:5:"mtime";i:1594972835;s:6:"markup";s:841:"<div id="top-header">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="home-account">
-                    {{ Pi|raw }}
+                    {{headingPi}} | {{ Pi|raw }}
                 </div>
             </div>
             <div class="col-md-6">
@@ -56,7 +57,7 @@ function onStart()
             </div>
         </div>
     </div>
-</div>";s:4:"code";s:779:"use Onetechlabs\Contact\Models\Contact;
+</div>";s:4:"code";s:831:"use Onetechlabs\Contact\Models\Contact;
 use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
 function onStart()
 {
@@ -69,7 +70,8 @@ function onStart()
       $link=explode("-",$PiSlice[$startMenu]);
       $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a>";
     }
-    $this['Pi'] = $htmlTopLink;"";
+    $this['headingPi']=$PiQuery->heading_online_store;
+    $this['Pi'] = $htmlTopLink;
     $ptn = "/^0/";
     $str = $contact['phone'];
     $rpltxt = "62";
