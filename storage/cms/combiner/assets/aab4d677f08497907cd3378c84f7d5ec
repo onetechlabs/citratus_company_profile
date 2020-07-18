@@ -127,7 +127,7 @@ p {
   border: 0;
   content: '';
   color: transparent;
-  background: url(../images/search-icon.png);
+  background: url(../themes/jtherczeg-grill/assets/images/search-icon.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -148,7 +148,7 @@ p {
 /*-- Heading --*/
 
 #heading {
-  background-image: url('http://192.168.1.8:8000/storage/app/media/12a.jpeg');
+  background-image: url('/storage/app/media/12a.jpeg');
   height: 140px;
 }
 
@@ -1036,7 +1036,7 @@ footer {
   top: 0;
   width: 34px;
   height: 34px;
-  background: url(../images/subscribe-icon.png);
+  background: url(../themes/jtherczeg-grill/assets/images/subscribe-icon.png);
   background-repeat: no-repeat;
   background-position: center;
   color: transparent;

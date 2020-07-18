@@ -148,7 +148,7 @@ p {
 /*-- Heading --*/
 
 #heading {
-  background-image: url('http://192.168.1.8:8000/storage/app/media/12a.jpeg');
+  background-image: url('/storage/app/media/12aa.jpeg');
   height: 140px;
 }
 
