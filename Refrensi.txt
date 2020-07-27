@@ -7,4 +7,4 @@ Warna :
 Coklat gaharu, ijo, Kuning
 
 
-tagline iklan : Virus Airborne putus dengan Citratus info lengkap kunjungi http://192.168.1.8:8000/
+tagline iklan : Virus Airborne putus dengan Citratus info lengkap kunjungi http://localhost:8000/

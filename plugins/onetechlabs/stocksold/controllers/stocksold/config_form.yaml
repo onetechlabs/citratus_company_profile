@@ -1,0 +1,10 @@
+name: 'Stock Sold'
+form: $/onetechlabs/stocksold/models/stocksold/fields.yaml
+modelClass: Onetechlabs\StockSold\Models\StockSold
+defaultRedirect: onetechlabs/stocksold/stocksold
+create:
+    redirect: 'onetechlabs/stocksold/stocksold/update/:id'
+    redirectClose: onetechlabs/stocksold/stocksold
+update:
+    redirect: onetechlabs/stocksold/stocksold
+    redirectClose: onetechlabs/stocksold/stocksold

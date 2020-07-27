@@ -1,0 +1,12 @@
+columns:
+    product_name:
+        label: 'Product Name'
+        type: text
+        searchable: true
+    amount_of_stock_sold:
+        label: Amount
+        type: number
+    date_sold:
+        label: 'Date Sold'
+        type: date
+        searchable: true

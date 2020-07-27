@@ -1,0 +1,40 @@
+<?php
+if(!isset($_GET['product_name'])){}else{
+?>
+<div class="report-widget">
+  <h3><?= e(trans($this->property('title'))) ?></h3>
+  <?php
+    if(!isset($_GET['product_name'])){
+      $stock="Choose a Product Name";
+    }else{
+      $stockall=$stock[0]->total_stock/25;
+      if(is_float($stockall)){
+        $cs=$stock[0]->total_stock-(floor($stockall)*25);
+        $stock=floor($stockall)." Carton | ".$cs." Pack";
+      }else{
+        $stock=floor($stockall)." Carton Left";
+      }
+    }
+  ?>
+  <table width="100%" border="1" padding="1">
+    <thead>
+      <tr>
+        <th style="padding:5px">
+          Stock Left
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:5px">
+          <?php
+            echo $stock;
+          ?>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<?php
+}
+?>

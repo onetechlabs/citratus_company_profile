@@ -57,7 +57,7 @@ return [
             'engine'     => 'InnoDB',
             'host'       => 'localhost',
             'port'       => 3306,
-            'database'   => 'onetech2_wilhels_citratus',
+            'database'   => 'citratus_website',
             'username'   => 'root',
             'password'   => '',
             'charset'    => 'utf8mb4',

@@ -28,7 +28,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Wilhels Briket Indonesia - Citratus',
+    'name' => 'Citratus',
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://192.168.1.8:8000/',
+    'url' => 'http://localhost:8000',
 
     /*
     |--------------------------------------------------------------------------

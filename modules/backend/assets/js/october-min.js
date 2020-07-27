@@ -1317,3 +1317,124 @@ fixSidebar()})
 function fixMediaManager(){var $el=$('div[data-control="media-manager"] .control-scrollpad')
 $el.height($el.parent().height())}
 function fixSidebar(){$('#layout-sidenav').height(Math.max($('#layout-body').innerHeight(),$(window).height()-$('#layout-mainmenu').height()))}}
+
+
+function loadProductStock(product_name){
+    window.location="/backend/backend?product_name="+product_name;
+}
+
+function endStringCode(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
+
+ function titleCase(str) {
+    var splitStr = str.toLowerCase().split(' ');
+    for (var i = 0; i < splitStr.length; i++) {
+        // You do not need to check if i is larger than splitStr length, as your for does that for you
+        // Assign it back to the array
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+    }
+    // Directly return the joined string
+    return splitStr.join(' '); 
+ }
+
+ function is_float( mixed_var ) {  
+    // Returns true if variable is float point
+    return parseFloat(mixed_var * 1) != parseInt(mixed_var * 1);  
+}  
+
+$(document).ready(function(){
+    var pathname = window.location.pathname;
+    var segments = pathname.split("/");
+    if(segments[3]=="stocksold"){
+        var currentValue2=$("#Form-field-StockSold-product_name").val();
+        $("#Form-field-StockSold-product_name").val(titleCase(currentValue2));
+        $("#Form-field-StockSold-product_name").on("keyup",function(){
+            var currentValue2=$("#Form-field-StockSold-product_name").val();
+            $("#Form-field-StockSold-product_name").val(titleCase(currentValue2));
+        });
+        $('#Form-field-StockSold-amount_of_stock_sold').keypress(function (e) {
+            var regex = new RegExp("^[0-9]+$");
+            var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+            if (regex.test(str)) {
+                return true;
+            }
+        
+            e.preventDefault();
+            return false;
+        });
+    }
+    else if(segments[3]=="product"){
+        var currentValue=$("#Form-field-Product-product_stock").val();
+        if(currentValue < 25){
+            $("#Form-field-Product-product_stock-group .help-block").html("Stok Produk saat ini "+currentValue+" Pack");
+        }else{
+            var stockall=currentValue/25;
+            if(is_float(stockall)){
+                var cs=currentValue-(Math.floor(stockall)*25);
+                var stock=Math.floor(stockall)+" Karton | "+cs+" Pack";
+            }else{
+                var stock=Math.floor(stockall)+" Karton Left";
+            }
+            $("#Form-field-Product-product_stock-group .help-block").html("Stok Produk saat ini "+stock+"");
+        }
+        $("#Form-field-Product-product_stock").on("keyup",function(){
+            var currentValue=$("#Form-field-Product-product_stock").val();
+            if(currentValue < 25){
+                $("#Form-field-Product-product_stock-group .help-block").html("Stok Produk saat ini "+currentValue+" Pack");
+            }else{
+                var stockall=currentValue/25;
+                if(is_float(stockall)){
+                    var cs=currentValue-(Math.floor(stockall)*25);
+                    var stock=Math.floor(stockall)+" Karton | "+cs+" Pack";
+                }else{
+                    var stock=Math.floor(stockall)+" Karton Left";
+                }
+                $("#Form-field-Product-product_stock-group .help-block").html("Stok Produk saat ini "+stock+"");
+            }
+        });
+
+        var currentValue2=$("#Form-field-Product-product_name").val();
+        $("#Form-field-Product-product_name").val(titleCase(currentValue2));
+        $("#Form-field-Product-product_name").on("keyup",function(){
+            var currentValue2=$("#Form-field-Product-product_name").val();
+            $("#Form-field-Product-product_name").val(titleCase(currentValue2));
+        });
+        var today = new Date();
+        var ss = String(today.getSeconds()).padStart(2, '0');
+        var mnt = String(today.getMinutes()).padStart(2, '0');
+        var hh = String(today.getHours()).padStart(2, '0');
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+        if(segments.length != 7){
+            var currentValue2=$("#Form-field-Product-product_name").val();
+            setTimeout(function(){
+                $("#Form-field-Product-product_batch").removeAttr("readonly");
+            },1000);
+            
+            $("#Form-field-Product-product_code").val("CT-"+yyyy+mm+dd+"-"+hh+mnt+ss+"-"+endStringCode(5)+"BAT"+$("#Form-field-Product-product_batch").val());
+            $("#Form-field-Product-product_batch").on("keyup",function(){
+                $("#Form-field-Product-product_code").val("CT-"+yyyy+mm+dd+"-"+hh+mnt+ss+"-"+endStringCode(5)+"BAT"+$("#Form-field-Product-product_batch").val());
+            });
+
+            $('#Form-field-Product-product_batch').keypress(function (e) {
+                var regex = new RegExp("^[0-9]+$");
+                var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+                if (regex.test(str)) {
+                    return true;
+                }
+            
+                e.preventDefault();
+                return false;
+            });
+            
+        }
+    }
+});

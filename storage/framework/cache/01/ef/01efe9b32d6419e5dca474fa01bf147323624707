@@ -1,0 +1,38 @@
+1595886295a:1:{s:27:"samples/kenali-citratus.htm";a:11:{s:8:"fileName";s:27:"samples/kenali-citratus.htm";s:7:"content";s:665:"title = "kenali-citratus"
+url = "/kenali-citratus"
+layout = "about-us"
+description = "About us page"
+meta_description = "Free restaurant theme by templatemo, converted for OctoberCMS"
+is_hidden = 0
+==
+<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Kenali Citratus</h2>
+                    <span>Beranda / <a href="{{ 'samples/kenali-citratus'|page }}">Kenali Citratus</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="timeline-post">
+    {% partial "about/intro" %}
+</div>";s:5:"mtime";i:1594996208;s:6:"markup";s:464:"<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Kenali Citratus</h2>
+                    <span>Beranda / <a href="{{ 'samples/kenali-citratus'|page }}">Kenali Citratus</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="timeline-post">
+    {% partial "about/intro" %}
+</div>";s:4:"code";N;s:5:"title";s:15:"kenali-citratus";s:3:"url";s:16:"/kenali-citratus";s:6:"layout";s:8:"about-us";s:11:"description";s:13:"About us page";s:16:"meta_description";s:61:"Free restaurant theme by templatemo, converted for OctoberCMS";s:9:"is_hidden";s:1:"0";}}

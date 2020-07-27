@@ -1,0 +1,91 @@
+<?php
+if(!isset($_GET['product_name'])){}else{
+?>
+<div class="report-widget">
+  <h3><?= e(trans($this->property('title'))) ?></h3>
+  <?php
+    if(!isset($_GET['product_name'])){
+      $stock="Choose a Product Name";
+      $stock_today="Choose a Product Name";
+      $stock_thismonth="Choose a Product Name";
+      $stock_thisyear="Choose a Product Name";
+    }else{
+      $stock_sold_all=$stock_sold[0]->total_stock_sold/25;
+      if(is_float($stock_sold_all)){
+        $cs=$stock_sold[0]->total_stock_sold-(floor($stock_sold_all)*25);
+        $stock=floor($stock_sold_all)." Carton | ".$cs." Pack";
+      }else{
+        $stock=floor($stock_sold_all)." Carton";
+      }
+
+      $stock_sold_tdy=$stock_sold_today[0]->total_stock_sold/25;
+      if(is_float($stock_sold_tdy)){
+        $cs=$stock_sold_today[0]->total_stock_sold-(floor($stock_sold_tdy)*25);
+        $stock_today=floor($stock_sold_tdy)." Carton | ".$cs." Pack";
+      }else{
+        $stock_today=floor($stock_sold_tdy)." Carton";
+      }
+
+      $stock_sold_thmonth=$stock_sold_thismonth[0]->total_stock_sold/25;
+      if(is_float($stock_sold_thmonth)){
+        $cs=$stock_sold_thismonth[0]->total_stock_sold-(floor($stock_sold_thmonth)*25);
+        $stock_thismonth=floor($stock_sold_thmonth)." Carton | ".$cs." Pack";
+      }else{
+        $stock_thismonth=floor($stock_sold_thmonth)." Carton";
+      }
+
+      $stock_sold_thyear=$stock_sold_thisyear[0]->total_stock_sold/25;
+      if(is_float($stock_sold_thyear)){
+        $cs=$stock_sold_thisyear[0]->total_stock_sold-(floor($stock_sold_thyear)*25);
+        $stock_thisyear=floor($stock_sold_thyear)." Carton | ".$cs." Pack";
+      }else{
+        $stock_thisyear=floor($stock_sold_thyear)." Carton";
+      }
+    }
+  ?>
+  <table width="100%" border="1" padding="1">
+    <thead>
+      <tr>
+        <th style="padding:5px">
+          Total Sold
+        </th>
+        <th style="padding:5px">
+          Today
+        </th>
+        <th style="padding:5px">
+          This Month
+        </th>
+        <th style="padding:5px">
+          This Year
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:5px">
+          <?php
+            echo $stock;
+          ?>
+        </td>
+        <td style="padding:5px">
+          <?php
+            echo $stock_today;
+          ?>
+        </td>
+        <td style="padding:5px">
+          <?php
+            echo $stock_thismonth;
+          ?>
+        </td>
+        <td style="padding:5px">
+          <?php
+            echo $stock_thisyear;
+          ?>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<?php
+}
+?>

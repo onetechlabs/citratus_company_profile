@@ -1,0 +1,20 @@
+<div class="report-widget">
+  <h3><?= e(trans($this->property('title'))) ?></h3>
+  <select id="product_name_list" name="product_name_list" style="width:100%;">
+    <option value="-">Choose a Product Name</option>
+    <?php
+    $countProduct=count($product_name_list);
+    for($i=0; $i < $countProduct; $i++){
+      $pr = isset($_GET['product_name']) ? $_GET['product_name'] : "";
+      if($pr==$product_name_list[$i]->product_name){
+        $selected="selected";
+      }else{
+        $selected="";
+      }
+    ?>
+    <option onclick="loadProductStock('<?php echo $product_name_list[$i]->product_name; ?>')" <?php echo $selected; ?> value=<?php echo $product_name_list[$i]->product_name; ?>><?php echo $product_name_list[$i]->product_name; ?></option>
+    <?php
+    }
+    ?>
+  </select>
+</div>

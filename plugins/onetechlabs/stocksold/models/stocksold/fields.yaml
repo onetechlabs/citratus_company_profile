@@ -1,0 +1,33 @@
+fields:
+    product_name:
+        label: 'Product Name'
+        span: left
+        placeholder: 'Product Name'
+        default: ''
+        required: 1
+        type: text
+        comment: 'Nama Produk'
+    amount_of_stock_sold:
+        label: 'Amount of Stock Sold'
+        span: auto
+        placeholder: 'Amount of Stock Sold'
+        required: 1
+        type: text
+        comment: 'Jumlah Stok Terjual'
+    additional_information:
+        label: 'Additional Information'
+        size: large
+        span: full
+        placeholder: 'Additional Information'
+        required: 1
+        type: textarea
+        comment: 'Keterangan Tambahan'
+    date_sold:
+        label: 'Date Sold'
+        span: full
+        mode: date
+        minDate: '2020-01-01'
+        required: 1
+        type: datepicker
+        comment: 'Tanggal Terjual'
+        ignoreTimezone: true

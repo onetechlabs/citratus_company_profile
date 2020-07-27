@@ -1,0 +1,106 @@
+1595886295a:1:{s:17:"samples/karir.htm";a:11:{s:8:"fileName";s:17:"samples/karir.htm";s:7:"content";s:2117:"title = "karir"
+url = "/karir"
+layout = "contact-us"
+description = "Carrier Us Page"
+meta_description = "Free restaurant theme by templatemo, converted for OctoberCMS"
+is_hidden = 0
+==
+<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Karir</h2>
+                    <span>Beranda / <a href="{{ 'samples/karir'|page }}">Karir</a></span>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<div id="product-post">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Berkarirlah bersama kami</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+    <div id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="product-item col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-6" style="margin-bottom:10px;">
+                                <img src="{{ 'LowkerSekretaris.png'|media }}" alt="" >
+                            </div>
+                            <div class="col-md-6">
+                                <img src="{{ 'info_lowongan_kerja.jpeg'|media }}" alt="" ><br><br>
+                                <img src="{{ 'lowongan-sales-spreading.png'|media }}" alt="" >
+                            </div>
+                        </div>    
+					</div>
+					<div class="row">
+						<div class="info">
+							<h3> <center>PT. Panji Herbal Indonesia sedang membutuhkan karyawan baru. kirimkan lamaran  via email PTPHIndonesia@gmail.com.</center><br>
+							<center><small>Untuk keterangan lebih lanjut hubungi :  <br>(Ranggawisnu) +62821 1821 3959 <br>(Chintya) +62821 1283 1609<br>(Anton) +62813 1755 8886</small></center></h3>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>";s:5:"mtime";i:1595827144;s:6:"markup";s:1932:"<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Karir</h2>
+                    <span>Beranda / <a href="{{ 'samples/karir'|page }}">Karir</a></span>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<div id="product-post">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Berkarirlah bersama kami</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+    <div id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="product-item col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-6" style="margin-bottom:10px;">
+                                <img src="{{ 'LowkerSekretaris.png'|media }}" alt="" >
+                            </div>
+                            <div class="col-md-6">
+                                <img src="{{ 'info_lowongan_kerja.jpeg'|media }}" alt="" ><br><br>
+                                <img src="{{ 'lowongan-sales-spreading.png'|media }}" alt="" >
+                            </div>
+                        </div>    
+					</div>
+					<div class="row">
+						<div class="info">
+							<h3> <center>PT. Panji Herbal Indonesia sedang membutuhkan karyawan baru. kirimkan lamaran  via email PTPHIndonesia@gmail.com.</center><br>
+							<center><small>Untuk keterangan lebih lanjut hubungi :  <br>(Ranggawisnu) +62821 1821 3959 <br>(Chintya) +62821 1283 1609<br>(Anton) +62813 1755 8886</small></center></h3>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>";s:4:"code";N;s:5:"title";s:5:"karir";s:3:"url";s:6:"/karir";s:6:"layout";s:10:"contact-us";s:11:"description";s:15:"Carrier Us Page";s:16:"meta_description";s:61:"Free restaurant theme by templatemo, converted for OctoberCMS";s:9:"is_hidden";s:1:"0";}}

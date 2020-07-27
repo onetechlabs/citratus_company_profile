@@ -1,0 +1,32 @@
+1595886295a:1:{s:7:"404.htm";a:12:{s:8:"fileName";s:7:"404.htm";s:7:"content";s:683:"title = "Page Not Found (404)"
+url = "/404"
+layout = "default"
+description = "Page Not Found"
+meta_author = "templatemo and József Tamás Herczeg"
+meta_description = "Free restaurant theme by templatemo, converted for OctoberCMS"
+meta_keywords = "business, restaurant, blog, responsive, bootstrap"
+==
+<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>404 Page Not Found</h2>
+                    <span>The page you are looking for doesn't exist or another error occurred.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+";s:5:"mtime";i:1594996208;s:6:"markup";s:380:"<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>404 Page Not Found</h2>
+                    <span>The page you are looking for doesn't exist or another error occurred.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:20:"Page Not Found (404)";s:3:"url";s:4:"/404";s:6:"layout";s:7:"default";s:11:"description";s:14:"Page Not Found";s:11:"meta_author";s:37:"templatemo and József Tamás Herczeg";s:16:"meta_description";s:61:"Free restaurant theme by templatemo, converted for OctoberCMS";s:13:"meta_keywords";s:49:"business, restaurant, blog, responsive, bootstrap";}}

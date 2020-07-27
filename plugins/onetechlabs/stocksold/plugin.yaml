@@ -1,0 +1,11 @@
+plugin:
+    name: 'onetechlabs.stocksold::lang.plugin.name'
+    description: 'onetechlabs.stocksold::lang.plugin.description'
+    author: Onetechlabs
+    icon: oc-icon-ban
+    homepage: ''
+navigation:
+    stock-sold:
+        label: 'Stock Sold'
+        url: /onetechlabs/stocksold/stocksold
+        icon: icon-archive
