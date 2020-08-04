@@ -1,0 +1,90 @@
+1596546516a:1:{s:10:"bottom.htm";a:6:{s:8:"fileName";s:10:"bottom.htm";s:7:"content";s:2200:"==
+<?php
+use Onetechlabs\Contact\Models\Contact;
+use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
+function onStart()
+{
+    $contact = Contact::find(1);
+    $ptn = "/^0/";
+    $str = $contact['phone'];
+    $rpltxt = "62";
+    $rpltxt2 = "+62 ";
+    $this['Contact'] = $contact;
+    $this['ContactDisplay'] = preg_replace($ptn, $rpltxt2, $str);
+}
+?>
+==
+<div class="main-footer">
+    <div class="row" style="margin-top:30px;">
+        <div class="col-md-3" style="border-right: 3px solid #95c88e;">
+            <div class="more-info">
+                <h4 class="footer-title">Media Sosial</h4><hr style="border-top: 1px solid #95c88e;">
+                <ul>
+                    {% if Contact.facebook_link != "" %}
+                      <li><i class="fa fa-facebook"></i><a href="{{Contact.facebook_link}}">Kunjungi FB</a></li>
+                    {% endif %}
+                    {% if Contact.twitter_link != "" %}
+                      <li><i class="fa fa-twitter"></i><a href="{{Contact.twitter_link}}">Kunjungi Twitter</a></li>
+                    {% endif %}
+                    {% if Contact.instagram_link != "" %}
+                      <li><i class="fa fa-instagram"></i><a href="{{Contact.instagram_link}}">Kunjungi IG</a></li>
+                    {% endif %}
+                    {% if Contact.facebook_link != "" %}
+                    {% elseif Contact.twitter_link != "" %}
+                    {% elseif Contact.instagram_link != "" %}
+                    {% else %}
+                      Mohon Seluruh Sosial Media Kami sedang dalam Perbaikan.
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="about">
+                <h4 class="footer-title">Apa itu Citratus ?</h4><hr style="border-top: 1px solid #95c88e;">
+                <p>Disinfektan bakar dibuat dari bahan-bahan alami beraroma menyegarkan untuk membantu mencegah berkembangnya Virus dan Bakteri serta nyamuk dan serangga pada ruangan anda serta memberikan efek segar alami yang menenangkan dan tidak menyebabkan sesak nafas .</p>
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1596545121;s:6:"markup";s:1823:"<div class="main-footer">
+    <div class="row" style="margin-top:30px;">
+        <div class="col-md-3" style="border-right: 3px solid #95c88e;">
+            <div class="more-info">
+                <h4 class="footer-title">Media Sosial</h4><hr style="border-top: 1px solid #95c88e;">
+                <ul>
+                    {% if Contact.facebook_link != "" %}
+                      <li><i class="fa fa-facebook"></i><a href="{{Contact.facebook_link}}">Kunjungi FB</a></li>
+                    {% endif %}
+                    {% if Contact.twitter_link != "" %}
+                      <li><i class="fa fa-twitter"></i><a href="{{Contact.twitter_link}}">Kunjungi Twitter</a></li>
+                    {% endif %}
+                    {% if Contact.instagram_link != "" %}
+                      <li><i class="fa fa-instagram"></i><a href="{{Contact.instagram_link}}">Kunjungi IG</a></li>
+                    {% endif %}
+                    {% if Contact.facebook_link != "" %}
+                    {% elseif Contact.twitter_link != "" %}
+                    {% elseif Contact.instagram_link != "" %}
+                    {% else %}
+                      Mohon Seluruh Sosial Media Kami sedang dalam Perbaikan.
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="about">
+                <h4 class="footer-title">Apa itu Citratus ?</h4><hr style="border-top: 1px solid #95c88e;">
+                <p>Disinfektan bakar dibuat dari bahan-bahan alami beraroma menyegarkan untuk membantu mencegah berkembangnya Virus dan Bakteri serta nyamuk dan serangga pada ruangan anda serta memberikan efek segar alami yang menenangkan dan tidak menyebabkan sesak nafas .</p>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";s:361:"use Onetechlabs\Contact\Models\Contact;
+use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
+function onStart()
+{
+    $contact = Contact::find(1);
+    $ptn = "/^0/";
+    $str = $contact['phone'];
+    $rpltxt = "62";
+    $rpltxt2 = "+62 ";
+    $this['Contact'] = $contact;
+    $this['ContactDisplay'] = preg_replace($ptn, $rpltxt2, $str);
+}";s:17:"_PARSER_ERROR_INI";s:0:"";}}

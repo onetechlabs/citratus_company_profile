@@ -1,0 +1,81 @@
+1596546011a:1:{s:7:"top.htm";a:6:{s:8:"fileName";s:7:"top.htm";s:7:"content";s:1555:"==
+<?php
+use Onetechlabs\Contact\Models\Contact;
+use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
+function onStart()
+{
+    $contact = Contact::find(1);
+    $PiQuery = Purchaseinformation::find(1);
+    $PiFilter = str_replace("<p>","",$PiQuery->online_store_information);
+    $PiSlice = explode("</p>",$PiFilter);
+    $htmlTopLink="";
+    for($startMenu=0; $startMenu < count($PiSlice)-1; $startMenu++){
+      $link=explode("-",$PiSlice[$startMenu]);
+      $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a>";
+    }
+    $this['headingPi']=$PiQuery->heading_online_store;
+    $this['Pi'] = $htmlTopLink;
+    $ptn = "/^0/";
+    $str = $contact['phone'];
+    $rpltxt = "62";
+    $rpltxt2 = "+62 ";
+    $this['Contact'] = preg_replace($ptn, $rpltxt, $str);
+    $this['ContactDisplay'] = preg_replace($ptn, $rpltxt2, $str);
+}
+?>
+==
+<div id="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="home-account">
+                    {{headingPi}} | {{ Pi|raw }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cart-info">
+                    <i class="fa fa-mobile-phone"></i>
+                    (<a href="https://api.whatsapp.com/send?phone={{Contact}}&text=Hallo%20CS%20Citratus%2C%20saya%20tertarik%20dengan%20Citratus%20nih.%20Boleh%20tanya-nyata%20dulu%3F%20%3A%29">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+";s:5:"mtime";i:1594996208;s:6:"markup";s:706:"<div id="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="home-account">
+                    {{headingPi}} | {{ Pi|raw }}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cart-info">
+                    <i class="fa fa-mobile-phone"></i>
+                    (<a href="https://api.whatsapp.com/send?phone={{Contact}}&text=Hallo%20CS%20Citratus%2C%20saya%20tertarik%20dengan%20Citratus%20nih.%20Boleh%20tanya-nyata%20dulu%3F%20%3A%29">Tanyakan via Whatsapp</a>) {{ContactDisplay}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";s:831:"use Onetechlabs\Contact\Models\Contact;
+use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
+function onStart()
+{
+    $contact = Contact::find(1);
+    $PiQuery = Purchaseinformation::find(1);
+    $PiFilter = str_replace("<p>","",$PiQuery->online_store_information);
+    $PiSlice = explode("</p>",$PiFilter);
+    $htmlTopLink="";
+    for($startMenu=0; $startMenu < count($PiSlice)-1; $startMenu++){
+      $link=explode("-",$PiSlice[$startMenu]);
+      $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a>";
+    }
+    $this['headingPi']=$PiQuery->heading_online_store;
+    $this['Pi'] = $htmlTopLink;
+    $ptn = "/^0/";
+    $str = $contact['phone'];
+    $rpltxt = "62";
+    $rpltxt2 = "+62 ";
+    $this['Contact'] = preg_replace($ptn, $rpltxt, $str);
+    $this['ContactDisplay'] = preg_replace($ptn, $rpltxt2, $str);
+}";s:17:"_PARSER_ERROR_INI";s:0:"";}}

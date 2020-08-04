@@ -271,11 +271,4 @@
   'Onetechlabs\\PurchaseInformation\\Models\\Purchaseinformation' => 'plugins/onetechlabs/purchaseinformation/models/Purchaseinformation.php',
   'Cms\\Twig\\ScriptsNode' => 'modules/cms/twig/ScriptsNode.php',
   'Onetechlabs\\Contact\\ReportWidgets\\Contact' => 'plugins/onetechlabs/contact/reportwidgets/Contact.php',
-  'onetechlabs\\product\\Plugin' => 'plugins/onetechlabs/product/Plugin.php',
-  'onetechlabs\\stocksold\\Plugin' => 'plugins/onetechlabs/stocksold/Plugin.php',
-  'Onetechlabs\\Product\\ReportWidgets\\Product' => 'plugins/onetechlabs/product/reportwidgets/Product.php',
-  'Onetechlabs\\StockSold\\ReportWidgets\\StockSold' => 'plugins/onetechlabs/stocksold/reportwidgets/StockSold.php',
-  'Onetechlabs\\Product\\ReportWidgets\\Chooseaproduct' => 'plugins/onetechlabs/product/reportwidgets/Chooseaproduct.php',
-  'Onetechlabs\\Product\\Models\\Product' => 'plugins/onetechlabs/product/models/Product.php',
-  'Onetechlabs\\StockSold\\Models\\StockSold' => 'plugins/onetechlabs/stocksold/models/StockSold.php',
 );

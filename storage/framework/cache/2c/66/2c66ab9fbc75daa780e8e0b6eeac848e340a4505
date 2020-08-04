@@ -1,0 +1,57 @@
+1596546011a:1:{s:8:"home.htm";a:11:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:684:"title = "Home"
+url = "/"
+layout = "default"
+description = "Home Page"
+meta_description = ""
+is_hidden = 0
+==
+<div id="slider">
+    {% partial "slider" %}
+</div>
+
+<div id="services">
+    {% partial "services" %}
+</div>
+
+<div id="latest-blog">
+    {% partial "latest-blog" %}
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Apa yang pelanggan kami katakan ?</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+	<div id="testimonails">
+		{% partial "testimonials" %}
+	</div>
+</div>
+";s:5:"mtime";i:1594996208;s:6:"markup";s:573:"<div id="slider">
+    {% partial "slider" %}
+</div>
+
+<div id="services">
+    {% partial "services" %}
+</div>
+
+<div id="latest-blog">
+    {% partial "latest-blog" %}
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Apa yang pelanggan kami katakan ?</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+	<div id="testimonails">
+		{% partial "testimonials" %}
+	</div>
+</div>";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:11:"description";s:9:"Home Page";s:16:"meta_description";s:0:"";s:9:"is_hidden";s:1:"0";}}

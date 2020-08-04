@@ -1,0 +1,41 @@
+1596546011a:1:{s:8:"meta.htm";a:5:{s:8:"fileName";s:8:"meta.htm";s:7:"content";s:918:"<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="keywords" content="{{ this.page.meta_keywords }}">
+<meta name="author" content="{{ this.page.meta_author }}">
+<meta name="viewport" content="width=device-width">
+<title>{{ this.page.title }} - {{ this.theme.site_name }}</title>
+        
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+{% styles %}
+<link href="{{ [
+            'assets/css/bootstrap.css',
+            'assets/css/font-awesome.css',
+            'assets/css/templatemo_style.css',
+            'assets/css/templatemo_misc.css',
+            'assets/css/flexslider.css',
+            'assets/css/testimonails-slider',
+		]|theme }}" rel="stylesheet">
+</head>			";s:5:"mtime";i:1594996208;s:6:"markup";s:915:"<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="keywords" content="{{ this.page.meta_keywords }}">
+<meta name="author" content="{{ this.page.meta_author }}">
+<meta name="viewport" content="width=device-width">
+<title>{{ this.page.title }} - {{ this.theme.site_name }}</title>
+        
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+{% styles %}
+<link href="{{ [
+            'assets/css/bootstrap.css',
+            'assets/css/font-awesome.css',
+            'assets/css/templatemo_style.css',
+            'assets/css/templatemo_misc.css',
+            'assets/css/flexslider.css',
+            'assets/css/testimonails-slider',
+		]|theme }}" rel="stylesheet">
+</head>";s:4:"code";N;}}

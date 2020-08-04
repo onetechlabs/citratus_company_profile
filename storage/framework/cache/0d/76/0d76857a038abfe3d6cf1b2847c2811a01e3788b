@@ -1,0 +1,32 @@
+1596552526a:1:{s:9:"error.htm";a:12:{s:8:"fileName";s:9:"error.htm";s:7:"content";s:695:"title = "Error Page (500)"
+url = "/error"
+layout = "default"
+description = "Error Page (500)"
+meta_author = "templatemo and József Tamás Herczeg"
+meta_description = "Free restaurant theme by templatemo, converted for OctoberCMS"
+meta_keywords = "business, restaurant, blog, responsive, bootstrap"
+==
+<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Ooops! An Error Occurred</h2>
+                    <span>We're so sorry, the page you requested cannot be displayed due to an error.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+";s:5:"mtime";i:1594996208;s:6:"markup";s:392:"<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Ooops! An Error Occurred</h2>
+                    <span>We're so sorry, the page you requested cannot be displayed due to an error.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:16:"Error Page (500)";s:3:"url";s:6:"/error";s:6:"layout";s:7:"default";s:11:"description";s:16:"Error Page (500)";s:11:"meta_author";s:37:"templatemo and József Tamás Herczeg";s:16:"meta_description";s:61:"Free restaurant theme by templatemo, converted for OctoberCMS";s:13:"meta_keywords";s:49:"business, restaurant, blog, responsive, bootstrap";}}

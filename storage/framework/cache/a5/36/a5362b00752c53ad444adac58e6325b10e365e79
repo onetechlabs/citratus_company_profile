@@ -1,0 +1,191 @@
+1596552526a:1:{s:18:"samples/kontak.htm";a:11:{s:8:"fileName";s:18:"samples/kontak.htm";s:7:"content";s:3784:"title = "kontak"
+url = "/kontak"
+layout = "contact-us"
+description = "Contact Us Page"
+meta_description = ""
+is_hidden = 0
+==
+<?php
+use Onetechlabs\Contact\Models\Contact;
+use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
+function onStart()
+{
+    $contact = Contact::find(1);
+    $PiQuery = Purchaseinformation::find(1);
+    $PiFilter = str_replace("<p>","",$PiQuery->online_store_information);
+    $PiSlice = explode("</p>",$PiFilter);
+    $htmlTopLink="";
+    for($startMenu=0; $startMenu < count($PiSlice)-1; $startMenu++){
+      $link=explode("-",$PiSlice[$startMenu]);
+      $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a><br>";
+    }
+    $this['headingPi']=$PiQuery->heading_online_store;
+    $this['headingPi2']=$PiQuery->heading_offline_store;
+    $this['offline_store_loctation']=$PiQuery->offline_store_information ;
+    $this['Pi'] = $htmlTopLink;"";
+    $ptn = "/^0/";
+    $str = $contact['phone'];
+    $rpltxt = "62";
+    $rpltxt2 = "+62 ";
+    $this['Contact'] = $contact;
+    $this['ContactDisplay'] = preg_replace($ptn, $rpltxt2, $str);
+}
+?>
+==
+<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Hubungi Kami</h2>
+                    <span>Beranda / <a href="{{ 'samples/kontak'|page }}">Hubungi Kami</a></span>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<div id="product-post">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Detail Informasi Kontak Kami</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+    <div id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="product-item col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <iframe src="{{Contact.map_google_link}}" style="width:100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="col-md-4">
+							<div class="info">
+                <h4>Alamat</h4>
+								<p>{{Contact.address}}</p>
+								<ul>
+                  {% if Contact.facebook_link != "" %}
+                    <li><i class="fa fa-facebook"></i><a href="{{Contact.facebook_link}}">Kunjungi FB</a></li>
+                  {% endif %}
+                  {% if Contact.twitter_link != "" %}
+                    <li><i class="fa fa-twitter"></i><a href="{{Contact.twitter_link}}">Kunjungi Twitter</a></li>
+                  {% endif %}
+                  {% if Contact.instagram_link != "" %}
+                    <li><i class="fa fa-instagram"></i><a href="{{Contact.instagram_link}}">Kunjungi IG</a></li>
+                  {% endif %}
+                  {% if Contact.facebook_link != "" %}
+                  {% elseif Contact.twitter_link != "" %}
+                  {% elseif Contact.instagram_link != "" %}
+                  {% else %}
+                    Mohon Seluruh Sosial Media Kami sedang dalam Perbaikan.
+                  {% endif %}
+                  <li><i class="fa fa-phone"></i>{{ContactDisplay}}</li>
+                  <li><i class="fa fa-envelope"></i><a href="#">{{Contact.email}}</a></li>
+								</ul>
+                <br>
+                {{headingPi}} <hr> {{ Pi|raw }}
+                <br>
+                {{headingPi2}} <hr> {{ offline_store_loctation|raw }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+";s:5:"mtime";i:1594996208;s:6:"markup";s:2698:"<div id="heading">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-content">
+                    <h2>Hubungi Kami</h2>
+                    <span>Beranda / <a href="{{ 'samples/kontak'|page }}">Hubungi Kami</a></span>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<div id="product-post">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="heading-section">
+                <h2>Detail Informasi Kontak Kami</h2>
+                <img src="{{ 'assets/images/under-heading.png'|theme }}" alt="" >
+            </div>
+        </div>
+    </div>
+    <div id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="product-item col-md-12">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <iframe src="{{Contact.map_google_link}}" style="width:100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="col-md-4">
+							<div class="info">
+                <h4>Alamat</h4>
+								<p>{{Contact.address}}</p>
+								<ul>
+                  {% if Contact.facebook_link != "" %}
+                    <li><i class="fa fa-facebook"></i><a href="{{Contact.facebook_link}}">Kunjungi FB</a></li>
+                  {% endif %}
+                  {% if Contact.twitter_link != "" %}
+                    <li><i class="fa fa-twitter"></i><a href="{{Contact.twitter_link}}">Kunjungi Twitter</a></li>
+                  {% endif %}
+                  {% if Contact.instagram_link != "" %}
+                    <li><i class="fa fa-instagram"></i><a href="{{Contact.instagram_link}}">Kunjungi IG</a></li>
+                  {% endif %}
+                  {% if Contact.facebook_link != "" %}
+                  {% elseif Contact.twitter_link != "" %}
+                  {% elseif Contact.instagram_link != "" %}
+                  {% else %}
+                    Mohon Seluruh Sosial Media Kami sedang dalam Perbaikan.
+                  {% endif %}
+                  <li><i class="fa fa-phone"></i>{{ContactDisplay}}</li>
+                  <li><i class="fa fa-envelope"></i><a href="#">{{Contact.email}}</a></li>
+								</ul>
+                <br>
+                {{headingPi}} <hr> {{ Pi|raw }}
+                <br>
+                {{headingPi2}} <hr> {{ offline_store_loctation|raw }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>";s:4:"code";s:945:"use Onetechlabs\Contact\Models\Contact;
+use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
+function onStart()
+{
+    $contact = Contact::find(1);
+    $PiQuery = Purchaseinformation::find(1);
+    $PiFilter = str_replace("<p>","",$PiQuery->online_store_information);
+    $PiSlice = explode("</p>",$PiFilter);
+    $htmlTopLink="";
+    for($startMenu=0; $startMenu < count($PiSlice)-1; $startMenu++){
+      $link=explode("-",$PiSlice[$startMenu]);
+      $htmlTopLink .= "<a href='".$link[1]."'>".$link[0]."</a><br>";
+    }
+    $this['headingPi']=$PiQuery->heading_online_store;
+    $this['headingPi2']=$PiQuery->heading_offline_store;
+    $this['offline_store_loctation']=$PiQuery->offline_store_information ;
+    $this['Pi'] = $htmlTopLink;"";
+    $ptn = "/^0/";
+    $str = $contact['phone'];
+    $rpltxt = "62";
+    $rpltxt2 = "+62 ";
+    $this['Contact'] = $contact;
+    $this['ContactDisplay'] = preg_replace($ptn, $rpltxt2, $str);
+}";s:5:"title";s:6:"kontak";s:3:"url";s:7:"/kontak";s:6:"layout";s:10:"contact-us";s:11:"description";s:15:"Contact Us Page";s:16:"meta_description";s:0:"";s:9:"is_hidden";s:1:"0";}}
