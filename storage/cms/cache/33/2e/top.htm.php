@@ -1,7 +1,7 @@
 <?php 
 use Onetechlabs\Contact\Models\Contact;
 use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;
-class Cms5f2972f6b5b7d067020435_a39bb00b7fb69c9dd462bdb189f5f04aClass extends Cms\Classes\PartialCode
+class Cms5f5b1f12a0c61951943817_48c1e11dab873135e5766a811b608da0Class extends Cms\Classes\PartialCode
 {
 public function onStart()
 {

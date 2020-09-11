@@ -1,5 +1,5 @@
 <?php 
-use Onetechlabs\Contact\Models\Contact;use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;class Cms5f2972f6b9880606026661_7bdad32a21564feef0e932615e263817Class extends Cms\Classes\PartialCode
+use Onetechlabs\Contact\Models\Contact;use Onetechlabs\Purchaseinformation\Models\Purchaseinformation;class Cms5f5b1f12dbf8b827784153_90e2da8f95e661c3538e72d0a5b00ac2Class extends Cms\Classes\PartialCode
 {
 
 

@@ -229,9 +229,9 @@ class NavigationManager
         $this->addMainMenuItems($owner, $definitions);
         //comment line to remove
         //remove menu admin
-        //$this->removeMainMenuItem($owner, "builder");
-        //$this->removeMainMenuItem($owner, "cms");
-        //$this->removeMainMenuItem($owner, "system");
+        $this->removeMainMenuItem($owner, "builder");
+        $this->removeMainMenuItem($owner, "cms");
+        $this->removeMainMenuItem($owner, "system");
 
     }
 
